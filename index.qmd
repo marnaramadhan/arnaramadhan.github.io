@@ -2,17 +2,18 @@
 title: "Arna Ramadhan"
 about:
     template: trestles
-    image: arna.jpg
+    image: img/arna.jpg
+    image-shape: rounded
     links: 
       - icon: instagram
         text: Instagram
-        href: www.instagram.com/abu.ukkaasyah
+        url: https://www.instagram.com/abu.ukkaasyah/
       - icon: threads
         text: Threads
-        href: www.threads.com/abu.ukkaasyah
+        url: https://www.threads.com/abu.ukkaasyah/
       - icon: envelope
         text: Email
-        href: arnaramadhan31@gmail.com
+        url: mailto:arnaramadhan31@gmail.com
 ---
 
 ## Bio
