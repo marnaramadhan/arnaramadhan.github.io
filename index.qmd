@@ -1,7 +1,20 @@
 ---
-title: "mywebsite"
+title: "Arna Ramadhan"
+about:
+    template: trestles
+    image: arna.jpg
+    links: 
+      - icon: instagram
+        text: Instagram
+        href: www.instagram.com/abu.ukkaasyah
+      - icon: threads
+        text: Threads
+        href: www.threads.com/abu.ukkaasyah
+      - icon: envelope
+        text: Email
+        href: arnaramadhan31@gmail.com
 ---
 
-This is a Quarto website.
+## Bio
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Assalamu'alaykum!
