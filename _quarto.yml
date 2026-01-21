@@ -10,6 +10,7 @@ website:
       - href: index.qmd
         text: Beranda
       - blog.qmd
+      - about.qmd
 
 format:
   html:
