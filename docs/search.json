@@ -18,7 +18,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "test post\n\n\ntest post blog\n\n\n\n\n\nJan 21, 2026\n\n\nArna Ramadhan\n\n\n\n\n\nNo matching items\n Back to top"
+    "text": "test post\n\n\ntest post blog\n\n\n\n\n\nJan 21, 2026\n\n\nArna Ramadhan\n\n\n\n\n\n\n\n\n\n\n\n\ntest post2\n\n\ntest post blog\n\n\n\n\n\nJan 21, 2026\n\n\nArna Ramadhan\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "about.html",
@@ -26,5 +26,12 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "posts/test2/index.html",
+    "href": "posts/test2/index.html",
+    "title": "test post2",
+    "section": "",
+    "text": "uji coba blog\n\n\n\n Back to top"
   }
 ]
