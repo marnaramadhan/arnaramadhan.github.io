@@ -5,6 +5,12 @@ project:
 website:
   title: "Arna Ramadhan"
   back-to-top-navigation: true
+  
+  google-analytics:
+    tracking-id: "G-E67S774T4Q"
+    anonymize-ip: true
+  cookie-consent: true
+  
   navbar:
     left:
       - href: index.qmd
@@ -15,8 +21,8 @@ website:
 format:
   html:
     theme:
-      - cosmo
-      - brand
+      light: flatly
+      dark: darkly
     css: styles.css
     toc: true
 
