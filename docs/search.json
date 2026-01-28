@@ -33,5 +33,75 @@
     "title": "test post2",
     "section": "",
     "text": "uji coba blog\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "kelas/pls-sem/index.html",
+    "href": "kelas/pls-sem/index.html",
+    "title": "Pelatihan Analisis Data dengan PLS-SEM",
+    "section": "",
+    "text": "Salah satu metode yang banyak digunakan dalam penelitian akademis –khususnya bidang sosial baik untuk publikasi ilmiah, skripsi, tesis, bahkan disertasi adalah Partial Least Square - Structural Equation Modeling atau lebih dikenal dengan PLS-SEM.\nPeneliti, baik dari kalangan dosen dan mahasiswa seringkali menggunakan software SmartPLS untuk pengolahan datanya, tapi sayangnya ada beberapa hal yang menjadi kendala dalam penggunaan software tersebut, seperti:\n\nHarga lisensi yang cenderung mahal, sekitar Rp12 juta pertahun.\nSebagian orang membeli lisensi  ilegal  di marketplace.\nVersi free hanya mampu mengolah 100 responden, bagaimana jika responden yang dimiliki lebih dari 100?\nTidak bisa copy-paste tabel output sehingga harus membuat tabel baru manual.\nHarus membuka banyak aplikasi untuk pelaporan atau penulisan hasil pengolahan data:\n\nMs. Word untuk menulis\nMs. Excel untuk tabulasi dan copy-paste tabel output\nSmartPLS untuk pengolahan data PLS-SEM\nSPSS dan semisal untuk uji validitas dan reliabilitas\ndst\n\n\n\n\n\n\n\nflowchart LR\n    A(Excel) --&gt; B(SPSS)\n    B --&gt; A\n    B --&gt; D\n    A --&gt; C(SmartPLS)\n    C --&gt; A\n    A --&gt; D(Word)\n\n\n Proses sebelum pelatihan \n\n\n\nAlur kerja yang “semrawut” di atas akan berubah menjadi efektif dan efisien setelah mengikuti pelatihan ini.\n\n\n\n\n\nflowchart LR\n    A(Positron) --&gt; B(Word)\n\n\n Proses setelah pelatihan \n\n\n\n\n\n\n\n\n\nSolusi\n\n\n\nKendala-kendala yang disebutkan di atas yang menjadi alasan mengapa pelatihan ini diadakan, yaitu sebagai solusi untuk membantu para peneliti melakukan pengolahan dan analisis data dengan PLS-SEM menjadi jauh lebih efektif dan efisien."
+  },
+  {
+    "objectID": "kelas/pls-sem/index.html#modul-1",
+    "href": "kelas/pls-sem/index.html#modul-1",
+    "title": "Pelatihan Analisis Data dengan PLS-SEM",
+    "section": "Modul 1",
+    "text": "Modul 1\n\nKonsep dasar PLS-SEM\nAlur kerja PLS-SEM\nKriteria model pengukuran\nKriteria model struktural\nTools/software PLS-SEM dan profilnya"
+  },
+  {
+    "objectID": "kelas/pls-sem/index.html#modul-2",
+    "href": "kelas/pls-sem/index.html#modul-2",
+    "title": "Pelatihan Analisis Data dengan PLS-SEM",
+    "section": "Modul 2",
+    "text": "Modul 2\n\nPengenalan R\nPengenalan Positron\nDownload R dan Positron\nInstal R dan Positron"
+  },
+  {
+    "objectID": "kelas/pls-sem/index.html#modul-3",
+    "href": "kelas/pls-sem/index.html#modul-3",
+    "title": "Pelatihan Analisis Data dengan PLS-SEM",
+    "section": "Modul 3",
+    "text": "Modul 3\n\nPengenalan package/library\nInstal package/library\nLoad package/library\nPersiapan data"
+  },
+  {
+    "objectID": "kelas/pls-sem/index.html#modul-4",
+    "href": "kelas/pls-sem/index.html#modul-4",
+    "title": "Pelatihan Analisis Data dengan PLS-SEM",
+    "section": "Modul 4",
+    "text": "Modul 4\n\nMembuat project baru\nImport data\nGambaran umum data\nStatistik deskriptif untuk karakteristik responden survei\nStatistik deskriptif untuk indikator pengukuran survei\nValiditas dan reliabilitas"
+  },
+  {
+    "objectID": "kelas/pls-sem/index.html#modul-5",
+    "href": "kelas/pls-sem/index.html#modul-5",
+    "title": "Pelatihan Analisis Data dengan PLS-SEM",
+    "section": "Modul 5",
+    "text": "Modul 5\n\nMembuat model pengukuran\nMembuat model struktural\nMembuat model PLS-SEM\nMenjalankan proses analisis"
+  },
+  {
+    "objectID": "kelas/pls-sem/index.html#modul-6",
+    "href": "kelas/pls-sem/index.html#modul-6",
+    "title": "Pelatihan Analisis Data dengan PLS-SEM",
+    "section": "Modul 6",
+    "text": "Modul 6\n\nEvaluasi model pengukuran\nEvaluasi model struktural\nProses bootstrapping\nEvaluasi kebaikan model\nMembuat path diagram"
+  },
+  {
+    "objectID": "kelas/pls-sem/index.html#modul-7",
+    "href": "kelas/pls-sem/index.html#modul-7",
+    "title": "Pelatihan Analisis Data dengan PLS-SEM",
+    "section": "Modul 7",
+    "text": "Modul 7\n\nKerangka laporan analisis\nPenyusunan output laporan\nLaporan dengan auto-report template"
+  },
+  {
+    "objectID": "kelas/pls-sem/index.html#modul-8",
+    "href": "kelas/pls-sem/index.html#modul-8",
+    "title": "Pelatihan Analisis Data dengan PLS-SEM",
+    "section": "Modul 8",
+    "text": "Modul 8\n\nModel PLS-SEM dengan variabel mediasi\nModel PLS-SEM dengan variabel moderasi"
+  },
+  {
+    "objectID": "kelas/pls-sem/index.html#modul-9",
+    "href": "kelas/pls-sem/index.html#modul-9",
+    "title": "Pelatihan Analisis Data dengan PLS-SEM",
+    "section": "Modul 9",
+    "text": "Modul 9\n\nMulti-group analysis\n\n\nDaftar di sini"
   }
 ]

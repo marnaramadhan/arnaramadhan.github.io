@@ -3,7 +3,7 @@ title: "Arna Ramadhan"
 about:
     template: trestles
     image: img/arna.jpg
-    image-shape: rounded
+    image-shape: round
     links: 
       - icon: instagram
         text: Instagram

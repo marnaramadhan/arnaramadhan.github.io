@@ -1,0 +1,141 @@
+---
+title: "Pelatihan Analisis Data dengan PLS-SEM"
+subtitle: "Menggunakan R, Positron, dan Quarto"
+format: html
+---
+
+# Mengapa pelatihan ini diadakan?
+Salah satu metode yang banyak digunakan dalam penelitian akademis --khususnya bidang sosial baik untuk publikasi ilmiah, skripsi, tesis, bahkan disertasi adalah **Partial Least Square - Structural Equation Modeling** atau lebih dikenal dengan PLS-SEM.
+
+Peneliti, baik dari kalangan dosen dan mahasiswa seringkali menggunakan software [SmartPLS](https://smartpls.com/pricing/) untuk pengolahan datanya, tapi sayangnya ada beberapa hal yang menjadi kendala dalam penggunaan software tersebut, seperti:
+
+- Harga lisensi yang cenderung mahal, sekitar <span style="color: red;">Rp12 juta pertahun</span>.
+- Sebagian orang membeli lisensi <span style="color: red;"> ilegal </span> di marketplace.
+- Versi free <span style="color: red;">hanya mampu mengolah</span> 100 responden, bagaimana jika responden yang dimiliki lebih dari 100?
+- <span style="color: red;">Tidak bisa</span> _copy-paste_ tabel output sehingga harus membuat tabel baru manual.
+- <span style="color: red;">Harus membuka banyak aplikasi</span> untuk pelaporan atau penulisan hasil pengolahan data:
+    * Ms. Word untuk menulis
+    * Ms. Excel untuk tabulasi dan _copy-paste_ tabel output
+    * SmartPLS untuk pengolahan data PLS-SEM
+    * SPSS dan semisal untuk uji validitas dan reliabilitas
+    * dst
+
+```{mermaid}
+%%| fig-cap: Proses sebelum pelatihan
+%%| fig-cap-align: center
+flowchart LR
+    A(Excel) --> B(SPSS)
+    B --> A
+    B --> D
+    A --> C(SmartPLS)
+    C --> A
+    A --> D(Word)
+```
+
+Alur kerja yang "semrawut" di atas akan berubah menjadi efektif dan efisien setelah mengikuti pelatihan ini.
+
+```{mermaid}
+%%| fig-cap: Proses setelah pelatihan
+flowchart LR
+    A(Positron) --> B(Word)
+```
+
+::: {.callout-caution}
+
+## Solusi
+
+Kendala-kendala yang disebutkan di atas yang menjadi alasan mengapa pelatihan ini diadakan, yaitu **sebagai solusi** untuk membantu para peneliti melakukan pengolahan dan analisis data dengan PLS-SEM menjadi jauh [**lebih efektif dan efisien**]{.underline}.
+
+:::
+
+---
+
+# Pelaksanaan
+Pelatihan ini akan dilakukan secara _online_ selama [**2 pertemuan**]{.underline} (@pertemuan 2jam) dengan rincian sebagai berikut:
+
+- **Tanggal pelaksanaan**: 4-5 Februari 2026
+- **Waktu**: Pukul 20.00 - 22.00 WIB
+- **Tempat**: Zoom Meeting
+
+---
+
+# Fasilitas
+Fasilitas atau _benefit_ yang didapatkan oleh peserta pelatihan:
+
+- 2 kali pertemuan _live_
+- Modul pelatihan
+- Dataset _real-case_
+- _Script code_ analisis data
+- Rekaman pelatihan
+- Grup support (Whatsapp)
+- **Auto-report template**
+
+::: {.callout-note}
+Peserta akan diberikan tautan untuk bergabung ke dalam grup Whatsapp setelah melakukan pendaftaran dan pembayaran.
+:::
+
+---
+
+# Biaya Pelatihan
+~~Rp 499.000 - Harga normal~~
+
+RP 279.000 - Early bird <span style="color: red;">(sd [30 Januari 2026]{.underline})</span>
+
+### [Daftar di sini](https://lynk.id/arnaramadhan/m5y6wvnld11d)
+
+---
+
+# Materi Pelatihan
+## Modul 1
+- Konsep dasar PLS-SEM
+- Alur kerja PLS-SEM
+- Kriteria model pengukuran
+- Kriteria model struktural
+- Tools/software PLS-SEM dan profilnya
+
+## Modul 2
+- Pengenalan R
+- Pengenalan Positron
+- Download R dan Positron
+- Instal R dan Positron
+
+## Modul 3
+- Pengenalan package/library
+- Instal package/library
+- Load package/library
+- Persiapan data
+
+## Modul 4
+- Membuat project baru
+- Import data
+- Gambaran umum data
+- Statistik deskriptif untuk karakteristik responden survei
+- Statistik deskriptif untuk indikator pengukuran survei
+- Validitas dan reliabilitas
+
+## Modul 5
+- Membuat model pengukuran
+- Membuat model struktural
+- Membuat model PLS-SEM
+- Menjalankan proses analisis
+
+## Modul 6
+- Evaluasi model pengukuran
+- Evaluasi model struktural
+- Proses bootstrapping
+- Evaluasi kebaikan model
+- Membuat path diagram
+
+## Modul 7
+- Kerangka laporan analisis
+- Penyusunan output laporan
+- Laporan dengan **auto-report template**
+
+## Modul 8
+- Model PLS-SEM dengan variabel mediasi
+- Model PLS-SEM dengan variabel moderasi
+
+## Modul 9
+- Multi-group analysis
+
+### [Daftar di sini](https://lynk.id/arnaramadhan/m5y6wvnld11d)
