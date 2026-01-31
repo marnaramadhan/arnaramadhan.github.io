@@ -2,16 +2,17 @@
 title: "Mindset"
 author: "Arna Ramadhan"
 date: 2026-01-29
+date-modified: last-modified
 format: revealjs
 ---
 
-## Sebelum membangun dashboard analytics
+## Pengantar
 
 Dalam membangun dashboard analytics, hal pertama yang harus dilakukan **bukanlah** menyusun arsitektur database atau tampilan dashboard yang menarik.
 
 Tapi membenahi **mindset** melalui [**data literacy**]{.underline}.
 
-## 4 Pilar data literacy
+## 4 Pilar data literacy^1^
 
 Pahami bahwa data literacy ini bukan sekedar mindset, lebih dari itu bahwa ia adalah sebuah **kemampuan** (ability) untuk...
 
@@ -21,3 +22,53 @@ Pahami bahwa data literacy ini bukan sekedar mindset, lebih dari itu bahwa ia ad
 - **Analyze**: lebih dari sekedar membaca, tetapi memahami, menginterpretasikan, dan menyelami lebih dalam makna yang terdapat pada data
 - **Argue**: Mengomunikasikan (storytelling) temuan data agar menjadi action ("so what?") yang dapat memberikan dampak positif 
 :::
+
+:::{.aside}
+<span style="font-size: 50%;">^1^Data Literacy: An Essential Skill for Every Employee (Udemy Business)</span>
+:::
+
+## Business process
+
+Memahami business process dengan baik akan memudahkan dalam merancang arsitektur database dan dashboard analytics. 
+
+**Mengapa?**
+
+Karena memahami business process mengantarkan pada pemahaman terhadap 
+"big picture" data apa yang seharusnya tercatat dan tersimpan.
+
+## Case 1: Digital marketing
+
+Ilustrasi business process digital marketing:
+
+`Advertiser menjalankan iklan --> Calon customer tertarik --> Customer service follow up --> Penjualan`
+
+Maka setiap aktivitas atau business process yang berjalan akan menghasilkan data.
+
+## Case 2: Bank sampah
+
+Seperti apa business process yang berjalan pada bank sampah?
+
+`Nasabah menyetor sampah --> Nasabah mendapatkan nilai dari bank sampah --> Bank sampah meneruskan kepada pengepul --> Bank sampah menerima pembayaran --> Tabungan nasabah --> Profit bank sampah`
+
+## Identifikasi data
+
+Setelah memahami business process maka kita dapat mengidentifikasi data yang menjadi kebutuhan perusahaan dalam pengambilan keputusan, juga untuk membangun dashboard analytics.
+
+Sebagai contoh pada digital marketing:
+
+- **Proses menjalankan iklan**: berapa budget iklan?
+- **Performa iklan**: berapa impresi, jangkauan, klik?
+- **Customer service**: berapa difollow up? berapa yang transaksi? berapa jumlahnya?
+
+## Recap
+
+Beberapa hal yang menjadi kesimpulan pada tahap ini:
+
+- Membangun mindset tentang pentingnya data literacy
+- Memahami kembali business process yang berjalan
+- Mengidentifikasi kebutuhan data dari business process
+
+## Tugas
+
+1. Identifikasi business process yang berjalan di perusahaan Anda
+2. Identifikasi data yang mungkin didapatkan atau dibutuhkan dari business process tersebut

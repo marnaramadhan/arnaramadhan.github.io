@@ -152,5 +152,89 @@
     "title": "Dashboard Analytics dengan BigQuery dan Looker Studio",
     "section": "",
     "text": "Mindset\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/mindset.html#pengantar",
+    "href": "slides/dashboard-analytics/mindset.html#pengantar",
+    "title": "Mindset",
+    "section": "Pengantar",
+    "text": "Pengantar\nDalam membangun dashboard analytics, hal pertama yang harus dilakukan bukanlah menyusun arsitektur database atau tampilan dashboard yang menarik.\nTapi membenahi mindset melalui data literacy."
+  },
+  {
+    "objectID": "slides/dashboard-analytics/mindset.html#business-process",
+    "href": "slides/dashboard-analytics/mindset.html#business-process",
+    "title": "Mindset",
+    "section": "Business process",
+    "text": "Business process\nMemahami business process dengan baik akan memudahkan dalam merancang arsitektur database dan dashboard analytics.\nMengapa?\nKarena memahami business process mengantarkan pada pemahaman terhadap “big picture” data apa yang seharusnya tercatat dan tersimpan."
+  },
+  {
+    "objectID": "slides/dashboard-analytics/mindset.html#pilar-data-literacy1",
+    "href": "slides/dashboard-analytics/mindset.html#pilar-data-literacy1",
+    "title": "Mindset",
+    "section": "4 Pilar data literacy1",
+    "text": "4 Pilar data literacy1\nPahami bahwa data literacy ini bukan sekedar mindset, lebih dari itu bahwa ia adalah sebuah kemampuan (ability) untuk…\n\n\nRead: tidak hanya membaca, tapi memahami apa yang sebenarnya disajikan oleh data\nWork: bekerja dengan data, bagaimana menyimpan, memilih data yang tepat ketika dibutuhkan, membersihkan hingga pengolahan data\nAnalyze: lebih dari sekedar membaca, tetapi memahami, menginterpretasikan, dan menyelami lebih dalam makna yang terdapat pada data\nArgue: Mengomunikasikan (storytelling) temuan data agar menjadi action (“so what?”) yang dapat memberikan dampak positif\n\n\n\n\n1Data Literacy: An Essential Skill for Every Employee (Udemy Business)"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/mindset.html#section",
+    "href": "slides/dashboard-analytics/mindset.html#section",
+    "title": "Mindset",
+    "section": "",
+    "text": "flowchart LR\n    A[Aktivitas bisnis] --&gt; B[Pengumpulan Data]\n    B --&gt; C[Analisis]\n    C --&gt; D[Keputusan]"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/mindset.html#case-1-digital-marketing-business-process",
+    "href": "slides/dashboard-analytics/mindset.html#case-1-digital-marketing-business-process",
+    "title": "Mindset",
+    "section": "Case 1: Digital marketing business process",
+    "text": "Case 1: Digital marketing business process\nIlustrasi data journey pada business process digital marketing.\n\n\n\n\n\nflowchart TD\n    id1(Advertiser) --&gt; |spending| id2(Leads)"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/mindset.html#case-1",
+    "href": "slides/dashboard-analytics/mindset.html#case-1",
+    "title": "Mindset",
+    "section": "Case 1:",
+    "text": "Case 1:\nDigital marketing business process\nIlustrasi data journey pada business process digital marketing.\n\n\n\n\n\nflowchart TD\n    id1(Advertiser) --&gt;"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/mindset.html#case-digital-marketing-business-process",
+    "href": "slides/dashboard-analytics/mindset.html#case-digital-marketing-business-process",
+    "title": "Mindset",
+    "section": "Case: Digital marketing business process",
+    "text": "Case: Digital marketing business process\nIlustrasi business process digital marketing:\nAdvertiser menjalankan iklan --&gt; Calon customer tertarik --&gt; Customer service follow up --&gt; Penjualan\nMaka setiap aktivitas atau business proses yang berjalan akan menghasilkan data."
+  },
+  {
+    "objectID": "slides/dashboard-analytics/mindset.html#case-1-digital-marketing",
+    "href": "slides/dashboard-analytics/mindset.html#case-1-digital-marketing",
+    "title": "Mindset",
+    "section": "Case 1: Digital marketing",
+    "text": "Case 1: Digital marketing\nIlustrasi business process digital marketing:\nAdvertiser menjalankan iklan --&gt; Calon customer tertarik --&gt; Customer service follow up --&gt; Penjualan\nMaka setiap aktivitas atau business process yang berjalan akan menghasilkan data."
+  },
+  {
+    "objectID": "slides/dashboard-analytics/mindset.html#case-2-bank-sampah",
+    "href": "slides/dashboard-analytics/mindset.html#case-2-bank-sampah",
+    "title": "Mindset",
+    "section": "Case 2: Bank sampah",
+    "text": "Case 2: Bank sampah\nSeperti apa business process yang berjalan pada bank sampah?\nNasabah menyetor sampah --&gt; Nasabah mendapatkan nilai dari bank sampah --&gt; Bank sampah meneruskan kepada pengepul --&gt; Bank sampah menerima pembayaran --&gt; Tabungan nasabah --&gt; Profit bank sampah"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/mindset.html#tugas",
+    "href": "slides/dashboard-analytics/mindset.html#tugas",
+    "title": "Mindset",
+    "section": "Tugas",
+    "text": "Tugas\n\nIdentifikasi business process yang berjalan di perusahaan Anda\nIdentifikasi data yang mungkin didapatkan atau dibutuhkan dari business process tersebut"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/mindset.html#identifikasi-data",
+    "href": "slides/dashboard-analytics/mindset.html#identifikasi-data",
+    "title": "Mindset",
+    "section": "Identifikasi data",
+    "text": "Identifikasi data\nSetelah memahami business process maka kita dapat mengidentifikasi data yang menjadi kebutuhan perusahaan dalam pengambilan keputusan, juga untuk membangun dashboard analytics.\nSebagai contoh pada digital marketing:\n\nProses menjalankan iklan: berapa budget iklan?\nPerforma iklan: berapa impresi, jangkauan, klik?\nCustomer service: berapa difollow up? berapa yang transaksi? berapa jumlahnya?"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/mindset.html#recap",
+    "href": "slides/dashboard-analytics/mindset.html#recap",
+    "title": "Mindset",
+    "section": "Recap",
+    "text": "Recap\nBeberapa hal yang menjadi kesimpulan pada tahap ini:\n\nMembangun mindset tentang pentingnya data literacy\nMemahami kembali business process yang berjalan\nMengidentifikasi kebutuhan data dari business process"
   }
 ]
