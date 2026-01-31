@@ -3,4 +3,4 @@ title: "Dashboard Analytics dengan BigQuery dan Looker Studio"
 format: html
 ---
 
-# [Mindset](https://arnaramadhan.my.id/slides/dashboard-analytics/mindset/)
+# [Mindset](https://arnaramadhan.my.id/slides/dashboard-analytics/mindset)
