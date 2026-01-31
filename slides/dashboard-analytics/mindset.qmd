@@ -11,9 +11,10 @@ Dalam membangun dashboard analytics, hal pertama yang harus dilakukan **bukanlah
 
 Tapi membenahi **mindset** melalui [**data literacy**]{.underline}.
 
-## 4 Pilar data literacy
+## 4 Pilar data literacy{.r-fit-text}
 
 Pahami bahwa data literacy ini bukan sekedar mindset, lebih dari itu bahwa ia adalah sebuah **kemampuan** (ability) untuk...
+
 
 - **Read**: tidak hanya membaca, tapi memahami apa yang sebenarnya disajikan oleh data
 - **Work**: bekerja dengan data, bagaimana menyimpan, memilih data yang tepat ketika dibutuhkan, membersihkan hingga pengolahan data

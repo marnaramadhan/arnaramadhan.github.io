@@ -1,0 +1,6 @@
+---
+title: "Dashboard Analytics dengan BigQuery dan Looker Studio"
+format: html
+---
+
+# [Mindset](https://arnaramadhan.my.id/slides/dashboard-analytics/#/title-slide){preview-link=false}
