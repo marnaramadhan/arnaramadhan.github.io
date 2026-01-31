@@ -103,5 +103,47 @@
     "title": "Pelatihan Analisis Data dengan PLS-SEM",
     "section": "Modul 9",
     "text": "Modul 9\n\nMulti-group analysis\n\n\nDaftar di sini"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/index.html#sebelum-membangun-dashboard-analytics",
+    "href": "slides/dashboard-analytics/index.html#sebelum-membangun-dashboard-analytics",
+    "title": "Mindset",
+    "section": "Sebelum membangun dashboard analytics",
+    "text": "Sebelum membangun dashboard analytics\nDalam membangun dashboard analytics, hal pertama yang harus dilakukan bukanlah menyusun arsitektur database atau tampilan dashboard yang menarik.\nTapi membenahi mindset melalui data literacy."
+  },
+  {
+    "objectID": "slides/dashboard-analytics/index.html#pilar-data-literacy",
+    "href": "slides/dashboard-analytics/index.html#pilar-data-literacy",
+    "title": "Mindset",
+    "section": "4 Pilar data literacy",
+    "text": "4 Pilar data literacy\nPahami bahwa data literacy ini bukan sekedar mindset, lebih dari itu bahwa ia adalah sebuah kemampuan (ability) untuk…\n\nRead: tidak hanya membaca, tapi memahami apa yang sebenarnya disajikan oleh data\nWork: bekerja dengan data, bagaimana menyimpan, memilih data yang tepat ketika dibutuhkan, membersihkan hingga pengolahan data\nAnalyze: lebih dari sekedar membaca, tetapi memahami, menginterpretasikan, dan menyelami lebih dalam makna yang terdapat pada data\nArgue: Mengomunikasikan (storytelling) temuan data agar menjadi action (“so what?”) yang dapat memberikan dampak positif"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/index.html#pilar-data-literacy1",
+    "href": "slides/dashboard-analytics/index.html#pilar-data-literacy1",
+    "title": "Mindset",
+    "section": "4 Pilar data literacy^1",
+    "text": "4 Pilar data literacy^1\nPahami bahwa data literacy ini bukan sekedar mindset, lebih dari itu bahwa ia adalah sebuah kemampuan (ability) untuk…\n\nRead:\nWork:\nAnalyze:\nArgue:"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/index.html#pilar-data-literacy-1",
+    "href": "slides/dashboard-analytics/index.html#pilar-data-literacy-1",
+    "title": "Mindset",
+    "section": "4 Pilar data literacy 1",
+    "text": "4 Pilar data literacy 1\nPahami bahwa data literacy ini bukan sekedar mindset, lebih dari itu bahwa ia adalah sebuah kemampuan (ability) untuk…\n\nRead: tidak hanya membaca, tapi memahami apa yang sebenarnya disajikan oleh data\nWork: bekerja dengan data, bagaimana menyimpan, memilih data yang tepat ketika dibutuhkan, membersihkan hingga pengolahan data\nAnalyze: lebih dari sekedar membaca, tetapi memahami, menginterpretasikan, dan menyelami lebih dalam makna yang terdapat pada data\nArgue: Mengomunikasikan (storytelling) temuan data agar menjadi action (“so what?”) yang dapat memberikan dampak positif\n\n\n\n\n\n\ndata literacy {.aside}"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/mindset.html#sebelum-membangun-dashboard-analytics",
+    "href": "slides/dashboard-analytics/mindset.html#sebelum-membangun-dashboard-analytics",
+    "title": "Mindset",
+    "section": "Sebelum membangun dashboard analytics",
+    "text": "Sebelum membangun dashboard analytics\nDalam membangun dashboard analytics, hal pertama yang harus dilakukan bukanlah menyusun arsitektur database atau tampilan dashboard yang menarik.\nTapi membenahi mindset melalui data literacy."
+  },
+  {
+    "objectID": "slides/dashboard-analytics/mindset.html#pilar-data-literacy",
+    "href": "slides/dashboard-analytics/mindset.html#pilar-data-literacy",
+    "title": "Mindset",
+    "section": "4 Pilar data literacy",
+    "text": "4 Pilar data literacy\nPahami bahwa data literacy ini bukan sekedar mindset, lebih dari itu bahwa ia adalah sebuah kemampuan (ability) untuk…\n\nRead: tidak hanya membaca, tapi memahami apa yang sebenarnya disajikan oleh data\nWork: bekerja dengan data, bagaimana menyimpan, memilih data yang tepat ketika dibutuhkan, membersihkan hingga pengolahan data\nAnalyze: lebih dari sekedar membaca, tetapi memahami, menginterpretasikan, dan menyelami lebih dalam makna yang terdapat pada data\nArgue: Mengomunikasikan (storytelling) temuan data agar menjadi action (“so what?”) yang dapat memberikan dampak positif"
   }
 ]

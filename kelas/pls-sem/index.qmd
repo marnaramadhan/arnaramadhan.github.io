@@ -22,7 +22,6 @@ Peneliti, baik dari kalangan dosen dan mahasiswa seringkali menggunakan software
 
 ```{mermaid}
 %%| fig-cap: Proses sebelum pelatihan
-%%| fig-cap-align: center
 flowchart LR
     A(Excel) --> B(SPSS)
     B --> A
