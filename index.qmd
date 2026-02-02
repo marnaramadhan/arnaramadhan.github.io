@@ -14,8 +14,13 @@ about:
       - icon: envelope
         text: Email
         url: mailto:arnaramadhan31@gmail.com
+toc: false
 ---
 
 ## Bio
 
 Assalamu'alaykum!
+
+Saya Arna Ramadhan, seorang praktisi di bidang data dan analitik dengan latar belakang Statistika. Berpengalaman sebagai konsultan riset, data, dan statistik selama 13 tahun.
+
+Saat ini, saya sebagai data analyst di [digitalytics.id](https://digitalytics.id/). Terlibat dalam aktivitas dunia pendidikan dengan menjadi pengajar di salah satu [kampus](https://feb.uika-bogor.ac.id/) di Kota Bogor dan adhoc data analyst di [PSKP Kemendikdasmen](https://pskp.kemendikdasmen.go.id/).

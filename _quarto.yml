@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Arna Ramadhan"
+  page-footer: "© Arna Ramadhan. 2026."
   back-to-top-navigation: true
   
   google-analytics:
