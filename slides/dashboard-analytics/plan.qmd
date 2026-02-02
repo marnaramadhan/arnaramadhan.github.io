@@ -1,0 +1,99 @@
+---
+title: "Planning"
+author: "Arna Ramadhan"
+date: 2026-02-02
+date-modified: last-modified
+format: revealjs
+smaller: true
+---
+
+## Pengantar
+
+Setelah menanamkan mindset yang tepat dan mengidentifikasi kebutuhan data, materi kali ini akan membahas mengenai **perencanaan** dalam membangun dashboard analytics yang meliputi:
+
+- Desain datawarehouse dan relationship
+- Data pipeline
+- Product Requirement Document
+
+## Datawarehouse dan relationship
+Datawarehouse merupakan **tempat penyimpanan database** yang terpusat, biasanya terdiri dari tabel-tabel yang [saling terhubung]{.underline} antar satu dengan yang lainnya.
+
+Tabel-tabel tersebut dibuat setelah melalui proses identifikasi data apa saja yang akan dicatat (data modeling):
+
+- **Identifikasi entity**: Objek apa yang terlibat?
+- **Identifikasi atribut**: Detail apa yang dicatat pada objek tersebut?
+- **Menentukan key**: Satu kolom (atribut) yang bersifat unik sebagai identitas/kunci.
+
+## Contoh tabel
+
+Tabel **penimbangan**
+
+| atribut | keterangan |
+|---|---|
+| `id_timbang` | id penimbangan |
+| `id` | id nasabah |
+| `kategori` | kategori sampah |
+| `berat` | berat sampah (kg) |
+
+Tabel **nasabah**
+
+| atribut | keterangan |
+|---|---|
+| `id` | id nasabah |
+| `nama` | nama nasabah |
+
+## Data pipeline
+Secara sederhana, data pipeline merupakan serangkaian **proses perjalanan data** dari sumber ke tujuan. Dalam proses ini, umumnya dikenal 3 tahapan **ETL** (*Extract, Transform, Load*).
+
+- **Extract**: proses pengambilan data dari sumber
+- **Transform**: membersikan, mengubah format data, dan perhitungan
+- **Load**: menyimpan data pada datawarehouse atau menampilkan pada dashboard analytics
+
+## Ilustrasi data pipeline
+Di bawah ini adalah contoh ilustrasi data pipeline dari proses digital marketing.
+
+```{mermaid}
+%%| fig-align: center
+%%| fig-width: 6
+flowchart LR
+    A(Meta) --> B(Datawarehouse)
+    C(Tiktok) --> B
+    D(Marketplace) --> B
+    B --> E(Dashboard Analytics)
+```
+
+Sebelum data yang diperoleh dari berbagai sumber masuk ke dalam datawarehouse, maka akan dilakukan proses ETL sesuai dengan kebutuhan analytics.
+
+## Product requirement document
+Salah satu hal penting namun **sering diabaikan** dalam proses perencanaan membangun dashboard analytics adalah [**product requirement document**]{.underline} (PRD).
+
+PRD ini merupakan **blueprint** atau dokumen panduan tentang:
+
+- **Apa yang akan dibuat?**
+- **Untuk siapa dibuat?**
+- **Apa tolok ukur suksesnya?**
+
+## Contoh PRD sederhana^1^
+**Case**: Dashboard Bank Sampah
+**Objective**: Mengubah transaksi dari manual ke digital dan memantau aktivitas bank sampah dan nasabah
+
+- **Pilar bisnis**:
+    - **User**: pengelola sampah
+    - **Masalah**: data menumpuk di buku, sulit melihat pertumbuhan bank sampah
+    - **Tujuan/Goal**: dashboard menunjukkan tabungan nasabah dan pertumbuhan bank sampah secara volume dan keuangan
+
+## Contoh PRD sederhana^2^
+- **Pilar data**:
+    - **Data inventory**: daftar tabel asal (raw) dan tabel akhir (analisis)
+    - **Database schema**: atribut, jenis data, dan relasi
+
+- **Pilar visualisasi** (dashboard):
+    - **Sitemap/menu**: navigasi halaman
+    - **Wireframe dan mapping**: sketsa tampilan dashboard (posisi grafik, filter, dst)
+
+- **Pilar control** (check):
+    - [ ] Apakah nilai yang tampil di dashboard sudah sesuai di database?
+    - [ ] Apakah filter/tombol sudah berjalan semestinya?
+    - [ ] Apakah tulisan (judul, keterangan, dll) sudah benar dan jelas 
+terbaca?
+- [ ] dst

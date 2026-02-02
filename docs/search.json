@@ -236,5 +236,82 @@
     "title": "Mindset",
     "section": "Recap",
     "text": "Recap\nBeberapa hal yang menjadi kesimpulan pada tahap ini:\n\nMembangun mindset tentang pentingnya data literacy\nMemahami kembali business process yang berjalan\nMengidentifikasi kebutuhan data dari business process"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/plan.html#pengantar",
+    "href": "slides/dashboard-analytics/plan.html#pengantar",
+    "title": "Planning",
+    "section": "Pengantar",
+    "text": "Pengantar\nSetelah menanamkan mindset yang tepat dan mengidentifikasi kebutuhan data, materi kali ini akan membahas mengenai perencanaan dalam membangun dashboard analytics yang meliputi:\n\nDesain datawarehouse dan relationship\nData pipeline\nProduct Requirement Document"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/plan.html#database-dan-relationship",
+    "href": "slides/dashboard-analytics/plan.html#database-dan-relationship",
+    "title": "Planning",
+    "section": "Database dan relationship",
+    "text": "Database dan relationship"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/plan.html#data-pipeline",
+    "href": "slides/dashboard-analytics/plan.html#data-pipeline",
+    "title": "Planning",
+    "section": "Data pipeline",
+    "text": "Data pipeline\nSecara sederhana, data pipeline merupakan serangkaian proses perjalanan data dari sumber ke tujuan. Dalam proses ini, umumnya dikenal 3 tahapan ETL (Extract, Transform, Load).\n\nExtract: proses pengambilan data dari sumber\nTransform: membersikan, mengubah format data, dan perhitungan\nLoad: menyimpan data pada datawarehouse atau menampilkan pada dashboard analytics"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/plan.html#product-requirement-document",
+    "href": "slides/dashboard-analytics/plan.html#product-requirement-document",
+    "title": "Planning",
+    "section": "Product requirement document",
+    "text": "Product requirement document\nSalah satu hal penting namun sering diabaikan dalam proses perencanaan membangun dashboard analytics adalah product requirement document (PRD).\nPRD ini merupakan blueprint atau dokumen panduan tentang:\n\nApa yang akan dibuat?\nUntuk siapa dibuat?\nApa tolok ukur suksesnya?"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/plan.html#ilustrasi-data-pipeline",
+    "href": "slides/dashboard-analytics/plan.html#ilustrasi-data-pipeline",
+    "title": "Planning",
+    "section": "Ilustrasi data pipeline",
+    "text": "Ilustrasi data pipeline\nDi bawah ini adalah contoh ilustrasi data pipeline dari proses digital marketing.\n\n\n\n\n\nflowchart LR\n    A(Meta) --&gt; B(Datawarehouse)\n    C(Tiktok) --&gt; B\n    D(Marketplace) --&gt; B\n    B --&gt; E(Dashboard Analytics)\n\n\n\n\n\n\nSebelum data yang diperoleh dari berbagai sumber masuk ke dalam datawarehouse, maka akan dilakukan proses ETL sesuai dengan kebutuhan analytics."
+  },
+  {
+    "objectID": "slides/dashboard-analytics/plan.html#datawarehouse-dan-relationship",
+    "href": "slides/dashboard-analytics/plan.html#datawarehouse-dan-relationship",
+    "title": "Planning",
+    "section": "Datawarehouse dan relationship",
+    "text": "Datawarehouse dan relationship\nDatawarehouse merupakan tempat penyimpanan database yang terpusat, biasanya terdiri dari tabel-tabel yang saling terhubung antar satu dengan yang lainnya.\nTabel-tabel tersebut dibuat setelah melalui proses identifikasi data apa saja yang akan dicatat (data modeling):\n\nIdentifikasi entity: Objek apa yang terlibat?\nIdentifikasi atribut: Detail apa yang dicatat pada objek tersebut?\nMenentukan key: Satu kolom (atribut) yang bersifat unik sebagai identitas/kunci."
+  },
+  {
+    "objectID": "slides/dashboard-analytics/plan.html#contoh-tabel",
+    "href": "slides/dashboard-analytics/plan.html#contoh-tabel",
+    "title": "Planning",
+    "section": "Contoh tabel",
+    "text": "Contoh tabel\nTabel penimbangan\n\n\n\natribut\nketerangan\n\n\n\n\nid_timbang\nid penimbangan\n\n\nid\nid nasabah\n\n\nkategori\nkategori sampah\n\n\nberat\nberat sampah (kg)\n\n\n\nTabel nasabah\n\n\n\natribut\nketerangan\n\n\n\n\nid\nid nasabah\n\n\nnama\nnama nasabah"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/plan.html#contoh-prd-sederhana",
+    "href": "slides/dashboard-analytics/plan.html#contoh-prd-sederhana",
+    "title": "Planning",
+    "section": "Contoh PRD sederhana",
+    "text": "Contoh PRD sederhana\nCase: Dashboard Bank Sampah Objective: Mengubah transaksi dari manual ke digital dan memantau aktivitas bank sampah dan nasabah\n\nPilar bisnis:\n\nUser: pengelola sampah\nMasalah: data menumpuk di buku, sulit melihat pertumbuhan bank sampah\nTujuan/Goal: dashboard menunjukkan tabungan nasabah dan pertumbuhan bank sampah secara volume dan keuangan"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/plan.html#contoh-prd-sederhana1",
+    "href": "slides/dashboard-analytics/plan.html#contoh-prd-sederhana1",
+    "title": "Planning",
+    "section": "Contoh PRD sederhana1",
+    "text": "Contoh PRD sederhana1\nCase: Dashboard Bank Sampah Objective: Mengubah transaksi dari manual ke digital dan memantau aktivitas bank sampah dan nasabah\n\nPilar bisnis:\n\nUser: pengelola sampah\nMasalah: data menumpuk di buku, sulit melihat pertumbuhan bank sampah\nTujuan/Goal: dashboard menunjukkan tabungan nasabah dan pertumbuhan bank sampah secara volume dan keuangan"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/plan.html#contoh-prd-sederhana-1",
+    "href": "slides/dashboard-analytics/plan.html#contoh-prd-sederhana-1",
+    "title": "Planning",
+    "section": "Contoh PRD sederhana [1]",
+    "text": "Contoh PRD sederhana [1]\nCase: Dashboard Bank Sampah Objective: Mengubah transaksi dari manual ke digital dan memantau aktivitas bank sampah dan nasabah\n\nPilar bisnis:\n\nUser: pengelola sampah\nMasalah: data menumpuk di buku, sulit melihat pertumbuhan bank sampah\nTujuan/Goal: dashboard menunjukkan tabungan nasabah dan pertumbuhan bank sampah secara volume dan keuangan"
+  },
+  {
+    "objectID": "slides/dashboard-analytics/plan.html#contoh-prd-sederhana2",
+    "href": "slides/dashboard-analytics/plan.html#contoh-prd-sederhana2",
+    "title": "Planning",
+    "section": "Contoh PRD sederhana2",
+    "text": "Contoh PRD sederhana2\n\nPilar data:\n\nData inventory: daftar tabel asal (raw) dan tabel akhir (analisis)\nDatabase schema: atribut, jenis data, dan relasi\n\nPilar visualisasi (dashboard):\n\nSitemap/menu: navigasi halaman\nWireframe dan mapping: sketsa tampilan dashboard (posisi grafik, filter, dst)\n\nPilar control (check):\n\nApakah nilai yang tampil di dashboard sudah sesuai di database?\nApakah filter/tombol sudah berjalan semestinya?\nApakah tulisan (judul, keterangan, dll) sudah benar dan jelas terbaca?\n\ndst"
   }
 ]
