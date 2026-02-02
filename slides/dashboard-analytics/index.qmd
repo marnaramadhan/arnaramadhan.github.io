@@ -4,3 +4,4 @@ format: html
 ---
 
 # [Mindset](https://arnaramadhan.my.id/slides/dashboard-analytics/mindset)
+# [Plan](https://arnaramadhan.my.id/slides/dashboard-analytics/plan)
