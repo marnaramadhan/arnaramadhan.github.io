@@ -1,0 +1,323 @@
+---
+title: Analisis Data dengan PLS-SEM
+subtitle: Menggunakan R dan Quarto
+author: M. Arna Ramadhan
+date: 2026-02-04
+format: revealjs
+chalkboard: true
+smaller: true
+---
+
+## Perkenalan
+Nama: M. Arna Ramadhan
+
+Email: [arnaramadhan31@gmail.com](mailto:arnaramadhan31@gmail.com) / [arna@digitalytics.id](mailto:arna@digitalytics.id){target="_blank"}
+
+Whatsapp: [082116663103](https://wa.me/6282116663103)
+
+Pekerjaan:
+
+- Data analyst [digitalytics.id](https://digitalytics.id)
+- Pengajar di Univ. Ibn Khaldun
+- Adhoc analyst PSKP Kemendikdasmen
+- Konsultan data dan statistik
+
+## Outline
+- Konsep SEM
+- Mengapa PLS-SEM?
+- Evaluasi Model
+- Macam-macam Model
+- Software SEM
+- R dan Quarto
+- Praktikum
+
+## Referensi
+![](pls-sem referensi.png)
+
+## Konsep SEM
+**Structural Equation Modeling** atau lebih akrab disebut SEM merupakan metode statistik yang digunakan untuk mendeskripsikan **hubungan kausalitas** dua atau lebih **variabel konstruk**^[Disebut juga variabel laten atau abstrak.].
+
+SEM terdiri dari 2 jenis variabel, yaitu **variabel manifes**^[Seringkali disebut dengan variabel pengukuran atau observed variable] (indikator) dan **variabel konstruk** yang digambarkan melalui **path model** atau path diagram.
+
+```{mermaid}
+%%| fig-align: center
+flowchart LR
+    K1 --> B((Kepuasan))
+    K2 --> B
+    K3 --> B
+    B --> E((Loyalitas))
+    E --> L1
+    E --> L2
+    E --> L3
+```
+
+## Prinsip SEM
+Model SEM dibangun berdasarkan 2 model:
+
+::: {.columns}
+
+::: {.column}
+- **Model pengukuran**: hubungan variabel konstruk dan indikatornya.
+```{mermaid}
+flowchart LR
+    A((Loyalitas)) --> L1
+    A --> L2
+    A --> L3
+```
+:::
+
+::: {.column}
+- **Model struktural**: hubungan variabel konstruk dengan konstruk lainnya.
+```{mermaid}
+flowchart LR
+    A((Kepuasan)) --> B((Loyalitas))
+```
+:::
+:::
+
+## Mengapa PLS-SEM?
+Ada 2 pendekatan yang biasa digunakan dalam menguji hubungan dalam SEM, yaitu covariance-based SEM (**CB-SEM**) dan partial least square SEM (**PLS-SEM**). Penggunaan PLS-SEM didasarkan pada beberapa hal, di antaranya:
+
+- Ukuran sampel kecil
+- Tidak ada asumsi distribusi data
+- Dapat menggunakan data numerik (interval, rasio) maupun skala ordinal
+- Dapat digunakan untuk indikator tunggal
+- Dapat menggabungkan model reflektif dan formatif
+- Kompleksitas model
+
+## Evaluasi Model PLS-SEM
+Evaluasi model PLS-SEM terbagi menjadi 2 bagian:
+
+- **Evaluasi model pengukuran**:
+    + Validitas: mengukur kesahihan/ketepatan indikator dari variabel konstruk
+    + Reliabilitas: mengukur konsistensi dari indikator pengukuran
+
+- **Evaluasi model struktural**:
+    + Signifikansi: menguji signifikansi pengaruh
+    + Goodness of fit: mengukur kebaikan model
+
+## Evaluasi Model Pengukuran
+::: {.columns}
+::: {.column width = "60%"}
+```{mermaid}
+graph TD
+    A(Model pengukuran) --> B(Validitas)
+    A --> C(Reliabilitas)
+    B --> D(Konvergen)
+    D --> E(Outer loadings)
+    D --> F(AVE)
+    B --> G(Diskriminan)
+    G --> L(Cross loadings)
+    G --> M(Fornell-Larcker)
+    C --> H(Cronbach's Alpha)
+    C --> I(Composite reliability)
+```
+:::
+
+::: {.column width = "40%"}
+
+::: {style="font-size: 18px;"}
+| Kriteria | Threshold |
+|---|---|
+| Outer loadings | 0.4 - 0.7 |
+| AVE^[Average Variance Extracted] | >= 0.5 |
+| Cronbach's Alpha | >= 0.6 |
+| Composite reliability | >= 0.6 |
+| Cross loadings | Nilai outer loadings indikator pada konstruknya harus lebih besar dibandingkan pada konstuk lainnya |
+| Fornell-Larcker | AVE suatu konstruk > nilai korelasi konstruk tersebut dengan konstruk lainnya |
+:::
+
+:::
+:::
+
+## Evaluasi Model Struktural
+
+::: {.columns}
+::: {.column width = "40%"}
+```{mermaid}
+graph LR
+    A(Model struktural) --> B(Signifikansi)
+    A --> C(Kebaikan model)
+    C --> D(R-squared)
+    C --> E(f-squared)
+```
+:::
+
+::: {.column width = "20%"}
+:::
+
+::: {.column width = "40%"}
+::: {style="font-size: 24px;"}
+Evaluasi model struktural:
+
+- **Signifikasi**: pengaruh variabel konstruk (path coefficient) terhadap konstruk lainnya (direct, indirect, total effect)
+- **Kebaikan model** (Goodness of fit):
+    + R-squared: koefisien determinasi (0.25-weak, 0.5-moderate, 0.75-strong)
+    + f-squared: effect size (0.02-weak, 0.15-moderate, 0.35-substantial influence)
+:::
+:::
+:::
+
+##
+
+::: {.columns}
+
+::: {.column}
+```{mermaid}
+flowchart LR
+    A((Loyalitas)) --> |outer loading| L1
+    A --> |outer loading| L2
+    A --> |outer loading| L3
+```
+:::
+
+::: {.column}
+- **Model struktural**: hubungan variabel konstruk dengan konstruk lainnya.
+```{mermaid}
+flowchart LR
+    A((Kepuasan)) --> |path coefficient| B((Loyalitas))
+```
+:::
+:::
+
+## Model-model dalam PLS-SEM
+::: {.columns}
+::: {.column}
+**Model sederhana**.
+```{mermaid}
+flowchart LR
+    A((Kualitas)) --> B((Kepuasan))
+```
+
+**Model dengan mediasi**.
+```{mermaid}
+flowchart LR
+    A((Kualitas)) --> B((Kepuasan))
+    B --> C((Loyalitas))
+    A --> C
+```
+:::
+
+::: {.column}
+**Model dengan moderasi**.
+```{mermaid}
+%%| fig-height: 4
+flowchart LR
+    A((Kualitas)) --> B((Kepuasan))
+    B --> C((Loyalitas))
+    A --> C
+    D((Kepuasan*Gender)) -.-> C
+```
+:::
+:::
+
+## Software CB-SEM dan PLS-SEM
+::: {.columns}
+::: {.column}
+**CB-SEM**:
+
+- Lisrel
+- [IBM Amos](https://www.ibm.com/products/structural-equation-modeling-sem){target="_blank"}
+- [Mplus](https://www.statmodel.com/SEM.shtml){target="_blank"}
+- [R](https://cran.r-project.org/){target="_blank"}
+- [Jamovi](https://www.jamovi.org/){target="_blank"}
+- [Jasp](https://jasp-stats.org/download/){target="_blank"}
+:::
+
+::: {.column}
+**PLS-SEM**:
+
+- [SmartPLS](https://smartpls.com/downloads/){target="_blank"}
+- [WarpPLS](https://www.scriptwarp.com/warppls/){target="_blank"}
+- R
+:::
+:::
+
+## Mengapa R dan Positron?
+**R** merupakan bahasa pemrograman yang dikembangkan untuk berbagai analisis data, visualisasi data, hingga pembuatan web interaktif (dashboard). Keunggulan yang dimiliki R antara lain:
+
+- Free dan open source
+- Kaya akan berbagai metode analisis statistik dan data science
+- Ekosistem package yang luas
+- Komunitas di berbagai penjuru dunia
+- Integrasi dengan bahasa pemrograman lain
+
+R dapat dijalankan di IDE (integrated development environment) Positron, yang merupakan evolusi dari RStudio.
+
+## Quarto
+Quarto merupakan pengembangan dari RMarkdown, sebuah sistem publikasi ilmiah yang memungkinkan pengguna menggabungkan kode dan hasil analisis dalam satu dokumen. Beberapa hal yang menjadi keunggulan Quarto:
+
+- Multi-format output:
+    + Dokumen: PDF, Ms. Word, HTML
+    + Presentasi: Ms. PowerPoint, Beamer, Revealjs (HTML)
+    + Publikasi: Website, blog, buku, artikel jurnal
+- Multi-bahasa pemrograman: R, Pytho, Julia, Observable (JavaScript)
+- User-friendly: source dan visual
+- Kualitas publikasi:
+    + Sitasi bibliografi
+    + Rumus matematika
+
+# Praktik
+
+## Dataset, Kode, dan Buku Saku
+
+- [Buku Saku](https://drive.google.com/file/d/1u64fcEpmt7bW5EOyQQvI60H_xd9T3N_N/view?usp=drive_link){target="_blank"}
+- [Data latihan 1](https://docs.google.com/spreadsheets/d/1v956Y2raAG4pz5BdlALtBm9n9TYVu_LOyz0QlE8wUBI/edit?usp=drive_link){target="_blank"}
+- [Data latihan 2](https://docs.google.com/spreadsheets/d/1LrarBmw93rgJBLbMzYnk8aW8dy-ImqL8eYEAcAJS4Fs/edit?usp=drive_link){target="_blank"}
+- [Auto-report template](https://drive.google.com/file/d/1EcmHroeWUTbpWzxr_mxQc9exuxmFyqr8/view?usp=drive_link){target="_blank"}
+
+## Latihan 1
+::: {.columns}
+::: {.column width="45%"}
+Pengaruh **perceived of usefulness** (PU) dan **organization readiness** (OR) terhadap **minat penggunaan e-commerce** (MP).
+
+- **PU**: 4 indikator
+- **OR**: 7 indikator
+- **MP**: 3 indikator
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
+Model minat penggunaan e-commerce.
+```{mermaid}
+%%| fig-height: 4
+flowchart LR
+    A((Perceived of Usefulness)) --> B((Minat Penggunaan E-Commerce))
+    C((Organization Readiness)) --> B
+```
+:::
+:::
+
+Link data: [data latihan 1](https://docs.google.com/spreadsheets/d/1v956Y2raAG4pz5BdlALtBm9n9TYVu_LOyz0QlE8wUBI/edit?usp=drive_link){target="_blank"}
+
+## Latihan 2
+::: {.columns}
+::: {.column width="45%"}
+Pengaruh **kualitas layanan website** (QLW), **kepercayaan** (KPC), dan **kepuasan pelanggan** (KPP) terhadap **loyalitas pelanggan** (LPL).
+
+- **QLW**: 3 indikator
+- **KPC**: 3 indikator
+- **KPP**: 3 indikator
+- **LPL**: 3 indikator
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
+Model kepuasan pelanggan e-commerce.
+```{mermaid}
+%%| fig-height: 12
+flowchart LR
+    A((QLW)) --> B((KPP))
+    A --> D((LPL))
+    C((KPC)) --> B
+    B --> D
+    C --> D
+```
+:::
+:::
+
+Link data: [data latihan 2](https://docs.google.com/spreadsheets/d/1LrarBmw93rgJBLbMzYnk8aW8dy-ImqL8eYEAcAJS4Fs/edit?usp=drive_link){target="_blank"}
