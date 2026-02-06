@@ -1,0 +1,33 @@
+---
+title: "Dokumen Pelatihan"
+format: html
+---
+
+Dokumen-dokumen yang berkaitan dengan pelatihan **Analisis Data dengan PLS-SEM menggunakan R dan Quarto** dapat diakses melalui tautan yang dilampirkan pada laman ini.
+
+## Materi
+
+Slide paparan: [akses](https://arnaramadhan.my.id/slides/pls-sem/pls-sem-quarto#/title-slide){target="_blank"}
+
+Buku saku: [akses](https://drive.google.com/file/d/1u64fcEpmt7bW5EOyQQvI60H_xd9T3N_N/view?usp=drive_link){target="_blank"}
+
+## Dataset
+
+Latihan 1: [akses](https://docs.google.com/spreadsheets/d/1v956Y2raAG4pz5BdlALtBm9n9TYVu_LOyz0QlE8wUBI/edit?usp=drive_link){target="_blank"}
+
+Latihan 2: [akses](https://docs.google.com/spreadsheets/d/1LrarBmw93rgJBLbMzYnk8aW8dy-ImqL8eYEAcAJS4Fs/edit?usp=drive_link){target="_blank"}
+
+## Code
+Auto-report template: [akses](https://drive.google.com/file/d/1EcmHroeWUTbpWzxr_mxQc9exuxmFyqr8/view?usp=drive_link){target="_blank"}
+
+Script code latihan 2: [akses](https://drive.google.com/file/d/1uCHyhriRkEF-F6VHs4NtvH7BuURopzpP/view?usp=drive_link){target="_blank"}
+
+## Video
+
+::: {.callout-important}
+Video hanya dapat diakses menggunakan email yang didaftarkan pada form pelatihan.
+:::
+
+Pertemuan1: [akses](https://youtu.be/aLqG7ww3H2M){target="_blank"}
+
+Pertemuan2: [akses](https://youtu.be/M2fQ9WESAiM){target="_blank"}

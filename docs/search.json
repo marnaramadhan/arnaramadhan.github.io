@@ -551,5 +551,40 @@
     "title": "Analisis Data dengan PLS-SEM",
     "section": "Latihan 2",
     "text": "Latihan 2\n\n\nPengaruh kualitas layanan website (QLW), kepercayaan (KPC), dan kepuasan pelanggan (KPP) terhadap loyalitas pelanggan (LPL).\n\nQLW: 3 indikator\nKPC: 3 indikator\nKPP: 3 indikator\nLPL: 3 indikator\n\n\n\n\nModel kepuasan pelanggan e-commerce.\n\n\n\n\n\nflowchart LR\n    A((QLW)) --&gt; B((KPP))\n    A --&gt; D((LPL))\n    C((KPC)) --&gt; B\n    B --&gt; D\n    C --&gt; D\n\n\n\n\n\n\n\nLink data: data latihan 2"
+  },
+  {
+    "objectID": "kelas/pls-sem/resources.html",
+    "href": "kelas/pls-sem/resources.html",
+    "title": "Dokumen Pelatihan",
+    "section": "",
+    "text": "Dokumen-dokumen yang berkaitan dengan pelatihan Analisis Data dengan PLS-SEM menggunakan R dan Quarto dapat diakses melalui tautan yang dilampirkan pada laman ini."
+  },
+  {
+    "objectID": "kelas/pls-sem/resources.html#materi",
+    "href": "kelas/pls-sem/resources.html#materi",
+    "title": "Dokumen Pelatihan",
+    "section": "Materi",
+    "text": "Materi\nSlide paparan: akses\nBuku saku: akses"
+  },
+  {
+    "objectID": "kelas/pls-sem/resources.html#dataset",
+    "href": "kelas/pls-sem/resources.html#dataset",
+    "title": "Dokumen Pelatihan",
+    "section": "Dataset",
+    "text": "Dataset\nLatihan 1: akses\nLatihan 2: akses"
+  },
+  {
+    "objectID": "kelas/pls-sem/resources.html#code",
+    "href": "kelas/pls-sem/resources.html#code",
+    "title": "Dokumen Pelatihan",
+    "section": "Code",
+    "text": "Code\nAuto-report template: akses\nScript code latihan 2: akses"
+  },
+  {
+    "objectID": "kelas/pls-sem/resources.html#video",
+    "href": "kelas/pls-sem/resources.html#video",
+    "title": "Dokumen Pelatihan",
+    "section": "Video",
+    "text": "Video\n\n\n\n\n\n\nImportant\n\n\n\nVideo hanya dapat diakses menggunakan email yang didaftarkan pada form pelatihan.\n\n\nPertemuan1: akses\nPertemuan2: akses"
   }
 ]
