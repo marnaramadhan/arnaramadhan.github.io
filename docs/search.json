@@ -586,5 +586,40 @@
     "title": "Dokumen Pelatihan",
     "section": "Video",
     "text": "Video\n\n\n\n\n\n\nImportant\n\n\n\nVideo hanya dapat diakses menggunakan email yang didaftarkan pada form pelatihan.\n\n\nPertemuan1: akses\nPertemuan2: akses"
+  },
+  {
+    "objectID": "kelas/jadwal-kelas.html",
+    "href": "kelas/jadwal-kelas.html",
+    "title": "Jadwal Kelas",
+    "section": "",
+    "text": "Daftar jadwal kelas yang akan dilaksanakan dalam waktu terdekat."
+  },
+  {
+    "objectID": "kelas/jadwal-kelas.html#basic-spreadsheet",
+    "href": "kelas/jadwal-kelas.html#basic-spreadsheet",
+    "title": "Jadwal Kelas",
+    "section": "Basic Spreadsheet",
+    "text": "Basic Spreadsheet\nBelajar Spreadsheet dari nol menggunakan Google Sheet yang didesain khusus untuk pemula. Kelas dilaksanakan dalam 1 pertemuan dengan durasi 180 menit.\n\n\n\n\n\n\nImportantSilabus\n\n\n\n\n\n\nFormula dasar\nFungsi logika\nConditional formatting\nData validation\nVlookup\nPivot table\nVisualisasi data\n\n\n\n\nDaftar: di sini"
+  },
+  {
+    "objectID": "kelas/jadwal-kelas.html#analisis-sem-dengan-jamovi",
+    "href": "kelas/jadwal-kelas.html#analisis-sem-dengan-jamovi",
+    "title": "Jadwal Kelas",
+    "section": "Analisis SEM dengan Jamovi",
+    "text": "Analisis SEM dengan Jamovi\nBelajar menganalisis data dengan SEM (Structural Equation Modeling) menggunakan aplikasi Jamovi yang akan dilaksanakan dalam 1 pertemuan dengan durasi 120 menit.\n\n\n\n\n\n\nImportantSilabus\n\n\n\n\n\n\nPengenalan SEM\nPengenalan Jamovi\nImport data\nEksplorasi data\nPath analysis\nSEM\n\n\n\n\nDaftar: di sini"
+  },
+  {
+    "objectID": "kelas/jadwal-kelas.html#bigquery",
+    "href": "kelas/jadwal-kelas.html#bigquery",
+    "title": "Jadwal Kelas",
+    "section": "BigQuery",
+    "text": "BigQuery\nBelajar analisis data menggunakan BigQuery dari ekosistem Google. Dilaksanakan selama 120 menit dalam 1 pertemuan.\n\n\n\n\n\n\nImportantSilabus\n\n\n\n\n\n\nPengenalan BigQuery\nImport data\nBasic formula SQL\nCommon Table Expression (CTE)\nJoin table\nMenghubungkan ke Looker Studio\n\n\n\n\nDaftar: di sini"
+  },
+  {
+    "objectID": "kelas/jadwal-kelas.html#rmdhan",
+    "href": "kelas/jadwal-kelas.html#rmdhan",
+    "title": "Jadwal Kelas",
+    "section": "Rmdhan",
+    "text": "Rmdhan\nProgram belajar analisis data menggunakan R (dengan Positron sebagai IDE) dan Quarto. Kelas ini dilaksanakan selama 30 hari (bulan Ramadhan) melalui video pembelajaran yang akan dikirimkan setiap hari.\n\n\n\n\n\n\nImportantSilabus\n\n\n\n\n\n\nPengenalan R dan ekosistemnya\nImport data\nData wrangling\nEksplorasi dan visualisasi\nRelasi data\nModeling\nReporting dan dashboard\n\n\n\n\nDaftar: di sini"
   }
 ]

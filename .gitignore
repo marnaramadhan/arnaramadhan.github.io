@@ -1,3 +1,5 @@
 /.quarto/
 /.Rhistory/
 slides/.DS_Store
+
+**/*.quarto_ipynb

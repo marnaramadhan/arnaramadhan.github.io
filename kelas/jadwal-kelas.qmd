@@ -1,0 +1,103 @@
+---
+title: "Jadwal Kelas"
+format: html
+---
+
+Daftar jadwal kelas yang akan dilaksanakan dalam waktu terdekat.
+
+| Kelas | Jadwal | Biaya |
+|-----|-----|----|
+| [Basic Spreadsheet](#basic-spreadsheet) | Minggu, 15 Feb 2026 | Rp49.000 |
+| [Analisis SEM dengan Jamovi](#analisis-sem-dengan-jamovi) | Senin, 16 Feb 2026 | Rp79.000 |
+| [BigQuery](#bigquery) | Selasa, 17 Feb 2026 | Rp79.000 |
+| [Rmdhan](#rmdhan) | Dimulai 1 Ramadhan | Rp149.000|
+
+<br>
+
+## Basic Spreadsheet
+Belajar Spreadsheet dari nol menggunakan **Google Sheet** yang didesain khusus untuk pemula. Kelas dilaksanakan dalam 1 pertemuan dengan durasi 180 menit.
+
+::: {.callout-important title="Silabus" collapse="true"}
+
+* Formula dasar
+
+* Fungsi logika
+
+* Conditional formatting
+
+* Data validation
+
+* Vlookup
+
+* Pivot table
+
+* Visualisasi data
+
+:::
+
+**Daftar**: [di sini](https://lynk.id/arnaramadhan/7dw14j4rd3pg){.underline targe="_blank"}
+
+## Analisis SEM dengan Jamovi
+Belajar menganalisis data dengan SEM (_Structural Equation Modeling_) menggunakan aplikasi **Jamovi** yang akan dilaksanakan dalam 1 pertemuan dengan durasi 120 menit.
+
+::: {.callout-important title="Silabus" collapse="true"}
+
+* Pengenalan SEM
+
+* Pengenalan Jamovi
+
+* Import data
+
+* Eksplorasi data
+
+* Path analysis
+
+* SEM
+
+:::
+
+**Daftar**: [di sini](https://lynk.id/arnaramadhan/7dg4790krxx9){.underline target="_blank"}
+
+## BigQuery
+Belajar analisis data menggunakan **BigQuery** dari ekosistem Google. Dilaksanakan selama 120 menit dalam 1 pertemuan.
+
+::: {.callout-important title="Silabus" collapse="true"}
+
+* Pengenalan BigQuery
+
+* Import data
+
+* Basic formula SQL
+
+* Common Table Expression (CTE)
+
+* Join table
+
+* Menghubungkan ke Looker Studio
+
+:::
+
+**Daftar**: [di sini](https://lynk.id/arnaramadhan/e6j5lyjrj1rp){.underline target="_blank"}
+
+## Rmdhan
+Program belajar analisis data menggunakan R (dengan Positron sebagai IDE) dan Quarto. Kelas ini dilaksanakan selama 30 hari (bulan Ramadhan) melalui video pembelajaran yang akan dikirimkan setiap hari.
+
+::: {.callout-important title="Silabus" collapse="true"}
+
+* Pengenalan R dan ekosistemnya
+
+* Import data
+
+* Data wrangling
+
+* Eksplorasi dan visualisasi
+
+* Relasi data
+
+* Modeling
+
+* Reporting dan dashboard
+
+:::
+
+**Daftar**: [di sini](https://lynk.id/arnaramadhan/rno3j64r4j85){.underline target="_blank"}
