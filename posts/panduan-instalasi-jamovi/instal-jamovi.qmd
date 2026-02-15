@@ -5,6 +5,12 @@ author: "Arna Ramadhan"
 date: 2/16/2026
 date-modified: last-modified
 reading-time: true
+categories:
+    - aplikasi
+    - sem
+    - analisis
+    - jamovi
+    - statistik
 ---
 
 [Jamovi](https://www.jamovi.org/) adalah salah satu aplikasi analisis statistik yang *free* dan *open source*. Salah satu metode analisis yang disediakan Jamovi yaitu SEM (*Structural Equation Modeling*) sehingga Jamovi dapat digunakan sebagai alternatif dari dua *software* yang paling banyak digunakan yaitu [Lisrel](https://ssilive.com/license/lisrel) dan [IBM AMOS](https://www.ibm.com/support/pages/downloading-ibm-spss-amos-26).
