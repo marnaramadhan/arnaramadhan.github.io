@@ -6,11 +6,12 @@ website:
   title: "Arna Ramadhan"
   page-footer: "© Arna Ramadhan. 2026."
   back-to-top-navigation: true
-  
+  open-graph: true
+  cookie-consent: true
+
   google-analytics:
     tracking-id: "G-E67S774T4Q"
     anonymize-ip: true
-  cookie-consent: true
   
   navbar:
     left:
