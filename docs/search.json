@@ -18,7 +18,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "test post\n\n\ntest post blog\n\n\n\n\n\nJan 21, 2026\n\n\nArna Ramadhan\n\n\n\n\n\n\n\n\n\n\n\n\ntest post2\n\n\ntest post blog\n\n\n\n\n\nJan 21, 2026\n\n\nArna Ramadhan\n\n\n\n\n\nNo matching items\n Back to top"
+    "text": "Panduan Instalasi Jamovi\n\n\nLangkah-langkah menyiapkan Jamovi untuk analisis SEM\n\n\n\n\n\nFeb 16, 2026\n\n\nArna Ramadhan\n\n\n\n\n\n\n\n\n\n\n\n\ntest post\n\n\ntest post blog\n\n\n\n\n\nJan 21, 2026\n\n\nArna Ramadhan\n\n\n\n\n\n\n\n\n\n\n\n\ntest post2\n\n\ntest post blog\n\n\n\n\n\nJan 21, 2026\n\n\nArna Ramadhan\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "about.html",
@@ -621,5 +621,12 @@
     "title": "Jadwal Kelas",
     "section": "Rmdhan",
     "text": "Rmdhan\nProgram belajar analisis data menggunakan R (dengan Positron sebagai IDE) dan Quarto. Kelas ini dilaksanakan selama 30 hari (bulan Ramadhan) melalui video pembelajaran yang akan dikirimkan setiap hari.\n\n\n\n\n\n\nImportantSilabus\n\n\n\n\n\n\nPengenalan R dan ekosistemnya\nImport data\nData wrangling\nEksplorasi dan visualisasi\nRelasi data\nModeling\nReporting dan dashboard\n\n\n\n\nDaftar: di sini"
+  },
+  {
+    "objectID": "posts/panduan-instalasi-jamovi/instal-jamovi.html",
+    "href": "posts/panduan-instalasi-jamovi/instal-jamovi.html",
+    "title": "Panduan Instalasi Jamovi",
+    "section": "",
+    "text": "Jamovi adalah salah satu aplikasi analisis statistik yang free dan open source. Salah satu metode analisis yang disediakan Jamovi yaitu SEM (Structural Equation Modeling) sehingga Jamovi dapat digunakan sebagai alternatif dari dua software yang paling banyak digunakan yaitu Lisrel dan IBM AMOS.\n\n\n\nTampilan website Jamovi\n\n\nJamovi tersedia dalam 2 format, yaitu cloud dan desktop. Jamovi cloud dapat dijalankan langsung melalui website tanpa harus menginstal aplikasi di laptop, berbeda dengan versi desktop. Namun, jika ingin menggunakan Jamovi versi desktop untuk analisis SEM dapat mengikuti cara instalasi berikut.\nCara instalasi Jamovi untuk analisis SEM:\n\nUnduh Jamovi melalui https://www.jamovi.org/\n\n\n\n\nPilih installer yang sesuai OS\n\n\n\nLakukan instalasi\n\n\n\n\nAntarmuka Jamovi\n\n\n\nInstal modul SEM\n\n\n\n\nMenambahkan library atau modul SEM\n\n\n\n\n\nKetik library SEM untuk mencari\n\n\n\nJamovi siap digunakan\n\n\n\n\n Back to top"
   }
 ]

@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/panduan-instalasi-jamovi/instal-jamovi.html",
       "/posts/test-post/index.html",
       "/posts/test2/index.html"
     ]

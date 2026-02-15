@@ -1,0 +1,33 @@
+---
+title: "Panduan Instalasi Jamovi"
+description: "Langkah-langkah menyiapkan Jamovi untuk analisis SEM"
+author: "Arna Ramadhan"
+date: 2/16/2026
+date-modified: last-modified
+reading-time: true
+---
+
+[Jamovi](https://www.jamovi.org/) adalah salah satu aplikasi analisis statistik yang *free* dan *open source*. Salah satu metode analisis yang disediakan Jamovi yaitu SEM (*Structural Equation Modeling*) sehingga Jamovi dapat digunakan sebagai alternatif dari dua *software* yang paling banyak digunakan yaitu [Lisrel](https://ssilive.com/license/lisrel) dan [IBM AMOS](https://www.ibm.com/support/pages/downloading-ibm-spss-amos-26).
+
+![Tampilan website Jamovi](jamovi-web.png){fig-align="center"}
+
+Jamovi tersedia dalam 2 format, yaitu cloud dan desktop. [Jamovi cloud](https://www.jamovi.org/cloud.html) dapat dijalankan langsung melalui website tanpa harus menginstal aplikasi di laptop, berbeda dengan versi desktop. Namun, jika ingin menggunakan Jamovi versi desktop untuk analisis SEM dapat mengikuti cara instalasi berikut.
+
+**Cara instalasi Jamovi untuk analisis SEM**:
+
+- Unduh Jamovi melalui <https://www.jamovi.org/>
+
+![Pilih installer yang sesuai OS](jamovi-download.png){fig-align="center" width="30%"}
+
+- Lakukan instalasi
+
+![Antarmuka Jamovi](antarmuka-jamovi.png){fig-align="center"}
+
+- Instal modul SEM
+
+![Menambahkan library atau modul SEM](install-module.png){fig-align="center"}
+
+
+![Ketik library SEM untuk mencari](library-sem.png){fig-align="center" width="60%"}
+
+- **Jamovi siap digunakan**
