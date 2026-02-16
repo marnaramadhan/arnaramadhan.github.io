@@ -726,5 +726,12 @@
     "title": "Analisis SEM dengan Jamovi",
     "section": "Latihan",
     "text": "Latihan\n\n\nPengaruh perceived of usefulness (PU) dan organization readiness (OR) terhadap minat penggunaan e-commerce (MP).\n\nPU: 4 indikator\nOR: 7 indikator\nMP: 3 indikator\n\n\n\n\nModel minat penggunaan e-commerce.\n\n\n\n\n\nflowchart LR\n    A((Perceived of Usefulness)) --&gt; B((Minat Penggunaan E-Commerce))\n    C((Organization Readiness)) --&gt; B\n\n\n\n\n\n\n\nLink data: data latihan"
+  },
+  {
+    "objectID": "kelas/sem-jamovi/resources.html",
+    "href": "kelas/sem-jamovi/resources.html",
+    "title": "Dokumen Pelatihan SEM dengan Jamovi",
+    "section": "",
+    "text": "Dokumen pelatihan Analisis SEM dengan Jamovi dapat diakses melalui tautan yang dilampirkan pada laman ini.\nSlide: akses\nData: akses\nVideo: akses\n\n\n\n\n\n\nImportant\n\n\n\nVideo hanya dapat diakses menggunakan email yang didaftarkan pada form pelatihan.\n\n\n\n\n\n Back to top"
   }
 ]

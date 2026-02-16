@@ -1,0 +1,16 @@
+---
+title: "Dokumen Pelatihan SEM dengan Jamovi"
+format: html
+---
+
+Dokumen pelatihan **Analisis SEM dengan Jamovi** dapat diakses melalui tautan yang dilampirkan pada laman ini.
+
+Slide: [akses](https://arnaramadhan.my.id/slides/sem-jamovi/sem-jamovi#/title-slide){target="_blank"}
+
+Data: [akses](https://drive.google.com/file/d/1LGqsSUwMJmJp7ZCzeOHkaY6gqhDTrLL_/view?usp=drive_link){target="_blank"}
+
+Video: [akses](https://youtu.be/XF_y8M_ujvw){target="_blank"}
+
+::: {.callout-important}
+Video hanya dapat diakses menggunakan email yang didaftarkan pada form pelatihan.
+:::
