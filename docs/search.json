@@ -628,5 +628,103 @@
     "title": "Panduan Instalasi Jamovi",
     "section": "",
     "text": "Jamovi adalah salah satu aplikasi analisis statistik yang free dan open source. Salah satu metode analisis yang disediakan Jamovi yaitu SEM (Structural Equation Modeling) sehingga Jamovi dapat digunakan sebagai alternatif dari dua software yang paling banyak digunakan yaitu Lisrel dan IBM AMOS.\n\n\n\nTampilan website Jamovi\n\n\nJamovi tersedia dalam 2 format, yaitu cloud dan desktop. Jamovi cloud dapat dijalankan langsung melalui website tanpa harus menginstal aplikasi di laptop, berbeda dengan versi desktop. Namun, jika ingin menggunakan Jamovi versi desktop untuk analisis SEM dapat mengikuti cara instalasi berikut.\nCara instalasi Jamovi untuk analisis SEM:\n\nUnduh Jamovi melalui https://www.jamovi.org/\n\n\n\n\nPilih installer yang sesuai OS\n\n\n\nLakukan instalasi\n\n\n\n\nAntarmuka Jamovi\n\n\n\nInstal modul SEM\n\n\n\n\nMenambahkan library atau modul SEM\n\n\n\n\n\nKetik library SEM untuk mencari\n\n\n\nJamovi siap digunakan\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "slides/sem-jamovi/sem-jamovi.html#perkenalan",
+    "href": "slides/sem-jamovi/sem-jamovi.html#perkenalan",
+    "title": "Analisis SEM dengan Jamovi",
+    "section": "Perkenalan",
+    "text": "Perkenalan\nNama: M. Arna Ramadhan\nEmail: arnaramadhan31@gmail.com / arna@digitalytics.id\nWhatsapp: 082116663103\nPekerjaan:\n\nData analyst digitalytics.id\nPengajar di Univ. Ibn Khaldun\nAdhoc analyst PSKP Kemendikdasmen\nKonsultan data dan statistik"
+  },
+  {
+    "objectID": "slides/sem-jamovi/sem-jamovi.html#outline",
+    "href": "slides/sem-jamovi/sem-jamovi.html#outline",
+    "title": "Analisis SEM dengan Jamovi",
+    "section": "Outline",
+    "text": "Outline\n\nKonsep SEM\nPrinsip SEM\nEvaluasi Model\nSoftware SEM\nPengenalan Jamovi\nPraktikum"
+  },
+  {
+    "objectID": "slides/sem-jamovi/sem-jamovi.html#konsep-sem",
+    "href": "slides/sem-jamovi/sem-jamovi.html#konsep-sem",
+    "title": "Analisis SEM dengan Jamovi",
+    "section": "Konsep SEM",
+    "text": "Konsep SEM\nStructural Equation Modeling atau lebih akrab disebut SEM merupakan metode statistik yang digunakan untuk mendeskripsikan hubungan kausalitas dua atau lebih variabel laten1.\nSEM terdiri dari 2 jenis variabel, yaitu variabel manifes2 (indikator) dan variabel laten yang digambarkan melalui path diagram.\n\n\n\n\n\nflowchart LR\n    K1 --&gt; B((Kepuasan))\n    K2 --&gt; B\n    K3 --&gt; B\n    B --&gt; E((Loyalitas))\n    E --&gt; L1\n    E --&gt; L2\n    E --&gt; L3\n\n\n\n\n\n\nDisebut juga variabel abstrak atau konstruk.Seringkali disebut dengan variabel pengukuran atau observed variable"
+  },
+  {
+    "objectID": "slides/sem-jamovi/sem-jamovi.html#prinsip-sem",
+    "href": "slides/sem-jamovi/sem-jamovi.html#prinsip-sem",
+    "title": "Analisis SEM dengan Jamovi",
+    "section": "Prinsip SEM",
+    "text": "Prinsip SEM\nModel SEM dibangun berdasarkan 2 model:\n\n\n\nModel pengukuran: hubungan variabel konstruk dan indikatornya.\n\n\n\n\n\n\nflowchart LR\n    A((Loyalitas)) --&gt; L1\n    A --&gt; L2\n    A --&gt; L3\n\n\n\n\n\n\n\n\nModel struktural: hubungan variabel konstruk dengan konstruk lainnya.\n\n\n\n\n\n\nflowchart LR\n    A((Kepuasan)) --&gt; B((Loyalitas))"
+  },
+  {
+    "objectID": "slides/sem-jamovi/sem-jamovi.html#evaluasi-model-pls-sem",
+    "href": "slides/sem-jamovi/sem-jamovi.html#evaluasi-model-pls-sem",
+    "title": "Analisis SEM dengan Jamovi",
+    "section": "Evaluasi Model PLS-SEM",
+    "text": "Evaluasi Model PLS-SEM\nEvaluasi SEM terbagi menjadi 2 bagian:\n\nEvaluasi model pengukuran:\n\nValiditas: mengukur kesahihan/ketepatan indikator dari variabel konstruk\nReliabilitas: mengukur konsistensi dari indikator pengukuran\n\nEvaluasi model struktural:\n\nSignifikansi: menguji signifikansi pengaruh\nGoodness of fit: mengukur kebaikan model"
+  },
+  {
+    "objectID": "slides/sem-jamovi/sem-jamovi.html#evaluasi-model-pengukuran",
+    "href": "slides/sem-jamovi/sem-jamovi.html#evaluasi-model-pengukuran",
+    "title": "Analisis SEM dengan Jamovi",
+    "section": "Evaluasi Model Pengukuran",
+    "text": "Evaluasi Model Pengukuran\n\n\n\n\n\n\n\ngraph TD\n    A(Model pengukuran) --&gt; B(Validitas)\n    B --&gt; G(Loading factor)\n    A --&gt; C(Reliabilitas)\n    C --&gt; D(Cronbach's Alpha)\n    C --&gt; E(Composite reliability)\n    B --&gt; F(AVE)\n\n\n\n\n\n\n\n\n\n\n\nKriteria\nThreshold\n\n\n\n\nLoading factor\n&gt;= 0.5\n\n\nAVE1\n&gt;= 0.5\n\n\nCronbach’s Alpha\n&gt;= 0.6\n\n\nComposite reliability\n&gt;= 0.6\n\n\n\n\n\nAverage Variance Extracted"
+  },
+  {
+    "objectID": "slides/sem-jamovi/sem-jamovi.html#evaluasi-model-struktural",
+    "href": "slides/sem-jamovi/sem-jamovi.html#evaluasi-model-struktural",
+    "title": "Analisis SEM dengan Jamovi",
+    "section": "Evaluasi Model Struktural",
+    "text": "Evaluasi Model Struktural\n\n\n\n\n\n\n\ngraph LR\n    A(Model struktural) --&gt; B(Signifikansi)\n    A --&gt; C(Kebaikan model)\n\n\n\n\n\n\n\n\n\n\nEvaluasi model struktural:\n\nSignifikasi: pengaruh variabel laten (path coefficient) terhadap laten lainnya\nKebaikan model (Goodness of fit):\n\nChi-squared: p-value &gt; 0.05\nGFI: &gt;= 0.90\nRMSEA: &lt;= 0.08\nCFI: &gt;= 0.90\nTLI: &gt;= 0.90\nNFI: &gt;= 0.90\nAGFI: &gt;= 0.90\nR-squared: koefisien determinasi (semakin besar semakin baik)"
+  },
+  {
+    "objectID": "slides/sem-jamovi/sem-jamovi.html#section",
+    "href": "slides/sem-jamovi/sem-jamovi.html#section",
+    "title": "Analisis SEM dengan Jamovi",
+    "section": "",
+    "text": "flowchart LR\n    A((Loyalitas)) --&gt; |outer loading| L1\n    A --&gt; |loading factor| L2\n    A --&gt; |loading factor| L3\n\n\n\n\n\n\n\n\nModel struktural: hubungan variabel konstruk dengan konstruk lainnya.\n\n\n\n\n\n\nflowchart LR\n    A((Kepuasan)) --&gt; |path coefficient| B((Loyalitas))"
+  },
+  {
+    "objectID": "slides/sem-jamovi/sem-jamovi.html#software-sem",
+    "href": "slides/sem-jamovi/sem-jamovi.html#software-sem",
+    "title": "Analisis SEM dengan Jamovi",
+    "section": "Software SEM",
+    "text": "Software SEM\n\n\nCB-SEM:\n\nLisrel\nIBM Amos\nMplus\nR\nJamovi\nJasp\n\n\nPLS-SEM:\n\nSmartPLS\nWarpPLS\nR"
+  },
+  {
+    "objectID": "slides/sem-jamovi/sem-jamovi.html#mengapa-jamovi",
+    "href": "slides/sem-jamovi/sem-jamovi.html#mengapa-jamovi",
+    "title": "Analisis SEM dengan Jamovi",
+    "section": "Mengapa Jamovi?",
+    "text": "Mengapa Jamovi?\nJamovi merupakan aplikasi analisis statistik yang dapat diakses secara online (cloud-based) dan offline (desktop) yang free dan open source. Keunggulan Jamovi antara lain:\n\nFree dan open source\nIntegrasi dengan R\nTersedia versi cloud dan desktop\nPenggunaan user-friendly\nTampilan antarmuka yang mirip SPSS dan semisalnya"
+  },
+  {
+    "objectID": "slides/sem-jamovi/sem-jamovi.html#dataset-kode-dan-buku-saku",
+    "href": "slides/sem-jamovi/sem-jamovi.html#dataset-kode-dan-buku-saku",
+    "title": "Analisis SEM dengan Jamovi",
+    "section": "Dataset, Kode, dan Buku Saku",
+    "text": "Dataset, Kode, dan Buku Saku\n\nBuku Saku\nData latihan 1\nData latihan 2\nAuto-report template"
+  },
+  {
+    "objectID": "slides/sem-jamovi/sem-jamovi.html#latihan-1",
+    "href": "slides/sem-jamovi/sem-jamovi.html#latihan-1",
+    "title": "Analisis SEM dengan Jamovi",
+    "section": "Latihan 1",
+    "text": "Latihan 1\n\n\nPengaruh perceived of usefulness (PU) dan organization readiness (OR) terhadap minat penggunaan e-commerce (MP).\n\nPU: 4 indikator\nOR: 7 indikator\nMP: 3 indikator\n\n\n\n\nModel minat penggunaan e-commerce.\n\n\n\n\n\nflowchart LR\n    A((Perceived of Usefulness)) --&gt; B((Minat Penggunaan E-Commerce))\n    C((Organization Readiness)) --&gt; B\n\n\n\n\n\n\n\nLink data: data latihan 1"
+  },
+  {
+    "objectID": "slides/sem-jamovi/sem-jamovi.html#latihan-2",
+    "href": "slides/sem-jamovi/sem-jamovi.html#latihan-2",
+    "title": "Analisis SEM dengan Jamovi",
+    "section": "Latihan 2",
+    "text": "Latihan 2\n\n\nPengaruh kualitas layanan website (QLW), kepercayaan (KPC), dan kepuasan pelanggan (KPP) terhadap loyalitas pelanggan (LPL).\n\nQLW: 3 indikator\nKPC: 3 indikator\nKPP: 3 indikator\nLPL: 3 indikator\n\n\n\n\nModel kepuasan pelanggan e-commerce.\n\n\n\n\n\nflowchart LR\n    A((QLW)) --&gt; B((KPP))\n    A --&gt; D((LPL))\n    C((KPC)) --&gt; B\n    B --&gt; D\n    C --&gt; D\n\n\n\n\n\n\n\nLink data: data latihan 2"
+  },
+  {
+    "objectID": "slides/sem-jamovi/sem-jamovi.html#latihan",
+    "href": "slides/sem-jamovi/sem-jamovi.html#latihan",
+    "title": "Analisis SEM dengan Jamovi",
+    "section": "Latihan",
+    "text": "Latihan\n\n\nPengaruh perceived of usefulness (PU) dan organization readiness (OR) terhadap minat penggunaan e-commerce (MP).\n\nPU: 4 indikator\nOR: 7 indikator\nMP: 3 indikator\n\n\n\n\nModel minat penggunaan e-commerce.\n\n\n\n\n\nflowchart LR\n    A((Perceived of Usefulness)) --&gt; B((Minat Penggunaan E-Commerce))\n    C((Organization Readiness)) --&gt; B\n\n\n\n\n\n\n\nLink data: data latihan"
   }
 ]

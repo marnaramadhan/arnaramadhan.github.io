@@ -1,0 +1,223 @@
+---
+title: "Analisis SEM dengan Jamovi"
+author: "M. Arna Ramadhan"
+date: 2026-02-16
+format: revealjs
+chalkboard: true
+smaller: true
+---
+
+## Perkenalan
+Nama: M. Arna Ramadhan
+
+Email: [arnaramadhan31@gmail.com](mailto:arnaramadhan31@gmail.com) / [arna@digitalytics.id](mailto:arna@digitalytics.id){target="_blank"}
+
+Whatsapp: [082116663103](https://wa.me/6282116663103)
+
+Pekerjaan:
+
+- Data analyst [digitalytics.id](https://digitalytics.id)
+- Pengajar di Univ. Ibn Khaldun
+- Adhoc analyst PSKP Kemendikdasmen
+- Konsultan data dan statistik
+
+## Outline
+- Konsep SEM
+- Prinsip SEM
+- Evaluasi Model
+- Software SEM
+- Pengenalan Jamovi
+- Praktikum
+
+## Konsep SEM
+**Structural Equation Modeling** atau lebih akrab disebut SEM merupakan metode statistik yang digunakan untuk mendeskripsikan **hubungan kausalitas** dua atau lebih **variabel laten**^[Disebut juga variabel abstrak atau konstruk.].
+
+SEM terdiri dari 2 jenis variabel, yaitu **variabel manifes**^[Seringkali disebut dengan variabel pengukuran atau observed variable] (indikator) dan **variabel laten** yang digambarkan melalui path diagram.
+
+```{mermaid}
+%%| fig-align: center
+flowchart LR
+    K1 --> B((Kepuasan))
+    K2 --> B
+    K3 --> B
+    B --> E((Loyalitas))
+    E --> L1
+    E --> L2
+    E --> L3
+```
+
+## Prinsip SEM
+Model SEM dibangun berdasarkan 2 model:
+
+::: {.columns}
+
+::: {.column}
+- **Model pengukuran**: hubungan variabel konstruk dan indikatornya.
+```{mermaid}
+flowchart LR
+    A((Loyalitas)) --> L1
+    A --> L2
+    A --> L3
+```
+:::
+
+::: {.column}
+- **Model struktural**: hubungan variabel konstruk dengan konstruk lainnya.
+```{mermaid}
+flowchart LR
+    A((Kepuasan)) --> B((Loyalitas))
+```
+:::
+:::
+
+## Evaluasi Model PLS-SEM
+Evaluasi SEM terbagi menjadi 2 bagian:
+
+- **Evaluasi model pengukuran**:
+    + Validitas: mengukur kesahihan/ketepatan indikator dari variabel konstruk
+    + Reliabilitas: mengukur konsistensi dari indikator pengukuran
+
+- **Evaluasi model struktural**:
+    + Signifikansi: menguji signifikansi pengaruh
+    + Goodness of fit: mengukur kebaikan model
+
+## Evaluasi Model Pengukuran
+::: {.columns}
+::: {.column width = "60%"}
+```{mermaid}
+graph TD
+    A(Model pengukuran) --> B(Validitas)
+    B --> G(Loading factor)
+    A --> C(Reliabilitas)
+    C --> D(Cronbach's Alpha)
+    C --> E(Composite reliability)
+    B --> F(AVE)
+```
+:::
+
+::: {.column width = "40%"}
+
+::: {style="font-size: 18px;"}
+| Kriteria | Threshold |
+|---|---|
+| Loading factor | >=  0.5 |
+| AVE^[Average Variance Extracted] | >= 0.5 |
+| Cronbach's Alpha | >= 0.6 |
+| Composite reliability | >= 0.6 |
+:::
+
+:::
+:::
+
+## Evaluasi Model Struktural
+
+::: {.columns}
+::: {.column width = "40%"}
+```{mermaid}
+graph LR
+    A(Model struktural) --> B(Signifikansi)
+    A --> C(Kebaikan model)
+```
+:::
+
+::: {.column width = "20%"}
+:::
+
+::: {.column width = "40%"}
+::: {style="font-size: 24px;"}
+Evaluasi model struktural:
+
+- **Signifikasi**: pengaruh variabel laten (path coefficient) terhadap laten lainnya
+- **Kebaikan model** (Goodness of fit):
+    + Chi-squared: p-value > 0.05
+    + GFI: >= 0.90
+    + RMSEA: <= 0.08
+    + CFI: >= 0.90
+    + TLI: >= 0.90
+    + NFI: >= 0.90
+    + AGFI: >= 0.90
+    + R-squared: koefisien determinasi (semakin besar semakin baik)
+:::
+:::
+:::
+
+##
+
+::: {.columns}
+
+::: {.column}
+```{mermaid}
+flowchart LR
+    A((Loyalitas)) --> |outer loading| L1
+    A --> |loading factor| L2
+    A --> |loading factor| L3
+```
+:::
+
+::: {.column}
+- **Model struktural**: hubungan variabel konstruk dengan konstruk lainnya.
+```{mermaid}
+flowchart LR
+    A((Kepuasan)) --> |path coefficient| B((Loyalitas))
+```
+:::
+:::
+
+## Software SEM
+::: {.columns}
+::: {.column}
+**CB-SEM**:
+
+- Lisrel
+- [IBM Amos](https://www.ibm.com/products/structural-equation-modeling-sem){target="_blank"}
+- [Mplus](https://www.statmodel.com/SEM.shtml){target="_blank"}
+- [R](https://cran.r-project.org/){target="_blank"}
+- [Jamovi](https://www.jamovi.org/){target="_blank"}
+- [Jasp](https://jasp-stats.org/download/){target="_blank"}
+:::
+
+::: {.column}
+**PLS-SEM**:
+
+- [SmartPLS](https://smartpls.com/downloads/){target="_blank"}
+- [WarpPLS](https://www.scriptwarp.com/warppls/){target="_blank"}
+- R
+:::
+:::
+
+## Mengapa Jamovi?
+**Jamovi** merupakan aplikasi analisis statistik yang dapat diakses secara *online* (*cloud-based*) dan *offline* (desktop) yang *free* dan *open source*. Keunggulan Jamovi antara lain:
+
+- Free dan open source
+- Integrasi dengan R
+- Tersedia versi cloud dan desktop
+- Penggunaan user-friendly
+- Tampilan antarmuka yang mirip SPSS dan semisalnya
+
+# Praktik
+
+## Latihan
+::: {.columns}
+::: {.column width="45%"}
+Pengaruh **perceived of usefulness** (PU) dan **organization readiness** (OR) terhadap **minat penggunaan e-commerce** (MP).
+
+- **PU**: 4 indikator
+- **OR**: 7 indikator
+- **MP**: 3 indikator
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
+Model minat penggunaan e-commerce.
+```{mermaid}
+%%| fig-height: 4
+flowchart LR
+    A((Perceived of Usefulness)) --> B((Minat Penggunaan E-Commerce))
+    C((Organization Readiness)) --> B
+```
+:::
+:::
+
+Link data: [data latihan](https://drive.google.com/file/d/1LGqsSUwMJmJp7ZCzeOHkaY6gqhDTrLL_/view?usp=sharing){target="_blank"}
