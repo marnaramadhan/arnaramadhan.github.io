@@ -1,0 +1,290 @@
+---
+title: "Analisis SEM dengan Jamovi 2"
+author: "Arna Ramadhan"
+date: "3/1/2026"
+format: revealjs
+chalkboard: true
+smaller: true
+---
+
+## Perkenalan
+Nama: M. Arna Ramadhan
+
+Email: [arnaramadhan31@gmail.com](mailto:arnaramadhan31@gmail.com) / [arna@digitalytics.id](mailto:arna@digitalytics.id){target="_blank"}
+
+Whatsapp: [082116663103](https://wa.me/6282116663103){target="_blank"}
+
+Pekerjaan:
+
+- Data analyst [digitalytics.id](https://digitalytics.id){target="_blank"}
+- Pengajar di Univ. Ibn Khaldun
+- Adhoc analyst PSKP Kemendikdasmen
+- Konsultan data dan statistik
+
+## Outline
+- Mediasi Model Analysis
+- Moderation Model Analysis
+- Multi-Group Analysis
+- Second Order Model
+- Praktikum
+
+## Referensi
+- Handbook of Structural Equation Modeling.
+- A Primer on Partial Least Squares Structural Equation Modeling (PLS-SEM).
+- Partial Least Square Structural Equation Modeling (PLS-SEM) Using R: A Workbook.
+- Handbook of Partial Least Squares: Concepts, Methods and Applications.
+
+## Model Mediasi
+Mediator adalah variabel "ketiga" yang mengintervensi hubungan antara variabel eksogen dan variabel endogen. Istilah lain untuk mediator adalah **intervening** atau **intermediasi** yang merefleksikan bahwa variabel ini hadir di antara variabel eksogen dan endogen.
+
+Fokus dari model mediasi dalam SEM adalah menguji pengaruh (*effect*) dari variabel eksogen terhadap variabel endogen secara langsung dan tidak langsung (melalui variabel mediasi atau intervening).
+
+```{mermaid}
+flowchart LR
+    A((X)) --> |a| B((Y1))
+    B --> |b| C((Y2))
+    A --> |c| C
+```
+
+## Tiga Jenis Mediasi
+Terdapat 3 jenis model mediasi:
+
+- **Complementary mediation**: pengaruh langsung dan tak langsung signifikan dan mempunyai arah pengaruh yang sama (**partial mediation**).
+- **Competitive mediation**: pengaruh langsung dan tak langsung signifikan namun mempunyai arah pengaruh yang berlawanan (**partial mediation**).
+- **Indirect-only mediation**: pengaruh tak langsung signifikan akan tetapi pengaruh langsung tidak signifikan (**full mediation**).
+
+## Penjelasan Tambahan
+Signifikannya pengaruh tak langsung variabel mediator juga diklasifikasikan ke dalam 3 kategori berdasarkan **variance accounted for** (VAF):
+
+- **VAF > 80%**: full mediation.
+- **20% <= VAF <= 80%**: partial mediation.
+- **VAF < 20%**: no mediation.
+
+**Formula perhitungan**:
+
+`VAF` = `indirect effect` / `total effect`
+
+## Contoh Paper Model Mediasi
+- [Sustainable Value Chain for Sustainable Lending of State-Owned Banks in Indonesia](https://www.mdpi.com/2071-1050/16/12/4940){target="_blank"}
+- [Boosting insurance sales performance with marketing strategy: the power of artificial intelligence, chatbot engagement and machine learning](https://www.emerald.com/jebde/article/doi/10.1108/JEBDE-12-2024-0054/1343503/Boosting-insurance-sales-performance-with?searchresult=1){target="_blank"}
+- [Leadership style and organizational performance: the role of job satisfaction](https://www.emerald.com/ebhrm/article/doi/10.1108/EBHRM-08-2025-0331/1334280/Leadership-style-and-organizational-performance?searchresult=1){target="_blank"}
+
+## Model Moderasi
+::: {.columns}
+::: {.column width="40%"}
+Model moderasi menggambarkan hubungan 2 variabel laten (konstruk) yang tidak konstan, akan tetapi sangat bergantung pada variabel yang ketiga yaitu varibel moderator.
+
+Variabel moderator dapat **mengubah kekuatan** pengaruh atau bahkan arah pengaruh dari variabel eksogen terhadap variabel endogen.
+
+Pengaruh model moderasi disebut juga sebagai **interaction term**.
+:::
+::: {.column width="10%"}
+:::
+::: {.column width="50%"}
+```{mermaid}
+flowchart LR
+    A((X)) --> B((Y))
+    C((M)) --> B
+    D((X*M)) --> B
+```
+:::
+:::
+
+## Jenis Variabel Moderasi
+```{mermaid}
+%%| fig-height: 4
+flowchart LR
+    A[Variabel Moderasi] --> B[Observed Variabel] & C[Unobserved Variabel]
+    B --> D[Kategorik/Dummy] & E[Numerik/Continuous]
+    C --> F[Single-item] & G[Multiple-items]
+```
+
+## Pendekatan Interaction Term
+Terdapat 3 pendekatan yang dapat digunakan dalam menyusun interaction term/moderasi.
+
+1. **Product-indicator**: menginteraksikan atau mengalikan setiap indikator pada variabel eksogen dengan variabel moderator.
+2. **Orthogonal**: memproduksi indikator antar variabel eksogen dan moderator secara ortogonal.
+3. **Two-stages**: indikator dalam interaction term dihasilkan dari perkalian skor variabel laten.
+
+## Ilustrasi Interaction Term{.scrollable}
+
+::: {.columns}
+::: {.column height=2}
+1. Product-indicators.
+```{mermaid}
+flowchart LR
+    A[x1] --- B((X))
+    C[x2] --- B
+    B --> D((Y))
+    E[e1] --- F((M))
+    G[e2] --- F
+    F --> D
+    H[x1*e1] --- I((X*M))
+    J[x1*e2] --- I
+    K[x2*e1] --- I
+    L[x2*e2] --- I
+    I --> D
+    D --- M[y1]
+    D --- N[y2]
+```
+:::
+::: {.column}
+2. Two-stages.
+
+Stage-1:
+```{mermaid}
+flowchart LR
+    A[x1] --- B((X))
+    C[x2] --- B
+    B --> D((Y))
+    E[e1] --- F((M))
+    G[e2] --- F
+    F --> D
+    D --- M[y1]
+    D --- N[y2]
+```
+
+Stage-2:
+```{mermaid}
+flowchart LR
+    A[LVS_X] --> B[LVS_Y]
+    C[LVS_M] --> B
+    D[LVS_X*LVS_M] --> B
+```
+:::
+:::
+
+## Contoh Paper Model Moderasi
+- [Boosting insurance sales performance with marketing strategy: the power of artificial intelligence, chatbot engagement and machine learning](https://www.emerald.com/jebde/article/doi/10.1108/JEBDE-12-2024-0054/1343503/Boosting-insurance-sales-performance-with?searchresult=1){target="_blank"}
+- [Enhancing innovation: the moderating role of hierarchy of authority between organizational leaders and organizational innovation](https://www.emerald.com/ijsbi/article/doi/10.1108/IJSBI-02-2025-0010/1338547/Enhancing-innovation-the-moderating-role-of?searchresult=1){target="_blank"}
+
+## Multi-Group
+Multi-Group Analysis (MGA) dalam SEM termasuk dalam *moderating effects*, hanya saja pendekatan yang digunakan yaitu membagi data ke dalam 2 atau lebih grup/subsampel ketika mediator berupa **data kategorik**.
+
+::: {.columns}
+::: {.column}
+**Group 1: Pria**
+```{mermaid}
+flowchart LR
+    A((Var. Eksogen)) --> B((Var. Endogen))
+```
+:::
+::: {.column}
+**Group 2: Wanita**
+```{mermaid}
+flowchart LR
+    A((Var. Eksogen)) --> B((Var. Endogen))
+```
+:::
+:::
+
+## Second Order Model
+Model ini seringkali disebut juga dengan istilah **high-order model** atau **hierarchical model** di mana suatu variabel laten tidak diukur langsung melalui indikator, tetapi dengan variabel laten lainnya yang dikenal dengan subvariabel atau dimensi.
+
+```{mermaid}
+flowchart LR
+    A((Variabel Laten)) --> B((Dimensi 1))
+    A --> C((Dimensi 2))
+    B --> E[d1]
+    B --> F[d2]
+    C --> G[d3]
+    C --> H[d4]
+```
+
+## Contoh Paper Multi-Group dan Second Order
+- [Patient Empowerment Index of Diabetes Mellitus Patients](https://journal.ipb.ac.id/jikk/article/view/26920/17883){target="_blank"}
+- [Mitigating resistance in smart health monitoring systems: the role of data governance and privacy concerns](https://www.emerald.com/intr/article/36/7/82/1343967/Mitigating-resistance-in-smart-health-monitoring?searchresult=1){target="_blank"}
+- [Channel disintegration: a hidden key to customer satisfaction and vendor lock-in](https://www.emerald.com/ijrdm/article/54/13/1/1340525/Channel-disintegration-a-hidden-key-to-customer?searchresult=1){target="_blank"}
+- [Examining place attachment and festival experience: a multi-group analysis of attendee behaviour in a music festival context](https://www.emerald.com/jhti/article/9/11/38/1341393/Examining-place-attachment-and-festival-experience?searchresult=1){target="_blank"}
+
+# Praktikum
+
+## Praktik 1
+::: {.columns}
+::: {.column width="45%"}
+Pengaruh **kualitas layanan website** (QLW), **kepercayaan** (KPC), dan **kepuasan pelanggan** (KPP) terhadap **loyalitas pelanggan** (LPL).
+
+- **QLW**: 3 indikator
+- **KPC**: 3 indikator
+- **KPP**: 3 indikator
+- **LPL**: 3 indikator
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
+Model kepuasan pelanggan e-commerce.
+```{mermaid}
+%%| fig-height: 12
+flowchart LR
+    A((QLW)) --> B((KPP))
+    A --> D((LPL))
+    C((KPC)) --> B
+    B --> D
+    C --> D
+```
+:::
+:::
+
+Link data: [Data Praktik 1-2](https://docs.google.com/spreadsheets/d/1vbetcnEJnxhwo-QleCo8QDKQvF0BzM4FdHPEV6uqyNs/edit?usp=sharing){target="_blank"}
+
+## Praktik 2
+::: {.columns}
+::: {.column width="45%"}
+Modifikasi model kepuasan pelanggan e-commerce dengan tambahan variabel moderasi berupa gender.
+
+Keterangan gender:
+
+- 0 = Wanita
+- 1 = Pria
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
+Model kepuasan pelanggan e-commerce dengan moderasi gender.
+```{mermaid}
+%%| fig-height: 12
+flowchart LR
+    A((QLW)) --> B((KPP))
+    A --> D((LPL))
+    C((KPC)) --> B
+    B --> D
+    C --> D
+    E((KPP*Gender)) -.-> D
+```
+:::
+:::
+
+## Praktik 3
+Praktik mengimplementasikan model SEM dengan second order variabel laten dan juga multi-group analysis.
+
+::: {.columns}
+::: {.column}
+Pengaruh MP (Manajemen Pengetahuan) dan SF (Strategi Fit) terhadap DS (Daya Saing) di mana DS mempunyai dimensi pengukuran berupa AG (Agility) dan LE (Lean).
+
+- MP: 8 indikator
+- SF: 12 indikator
+- DS: 2 dimensi
+    * AG: 4 indikator
+    * LE: 6 indikator
+:::
+::: {.column}
+```{mermaid}
+flowchart LR
+    A((MP)) --> B((DS))
+    C((SF)) --> B
+    B --> D((AG))
+    B --> E((LE))
+```
+
+Multi-group menggunakan variabel **lama bekerja** dengan keterangan:
+
+- 0 = < 10 tahun
+- 1 = >= 10 tahun
+
+Link: [Data Praktik 3-4](https://docs.google.com/spreadsheets/d/1M_1MaQb6sLT8SvggMC8vtbc0yjVLjwdpBTa1UsTAN9k/edit?usp=sharing){target="_blank"}
+:::
+:::
