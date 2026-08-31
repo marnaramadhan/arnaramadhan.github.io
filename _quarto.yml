@@ -19,8 +19,6 @@ website:
         text: Beranda
       - href: blog.qmd
         text: Blog
-      - href: kelas/jadwal-kelas.qmd
-        text: Kelas
 
 format:
   html:
